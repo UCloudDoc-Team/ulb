@@ -1,0 +1,12 @@
+{{indexmenu_n>50}}
+
+
+# 对ULB压测时为何会出现连接失败？
+
+通常情况下，在使用Linux操作系统作为压测模拟客户端时，当压测性能达到ULB极限前，不会出现连接失败的情况。
+
+但对于使用Windows作为压测的模拟客户端时，可能会出现TCP连接失败的问题。这是由于在压测场景下，Windows系统会快速复用客户端IP和端口发起TCP连接的建立，而在被压测ULB的后端Linux服务节点上TCP协议栈中，以相同的源地址及端口所建立的TCP连接可能尚未被释放完毕，若此时如果 "新建连接的序列号" 大于 "已存在连接的序列号"，Linux服务节点就会认为新建连接的SYN请求是已存在连接的重传，从而导致新的TCP连接建立失败。
+
+所以在对ULB进行压测时，请尽量使用Linux作为压测模拟客户端，如果必须使用Windows系统作为压测模拟客户端，则需添加系统注册表中关于TCP时间戳的选项，该选项默认在Windows系统中是未激活的，具体配置参见 [Windows帮助文档](https://technet.microsoft.com/en-us/library/cc938205.aspx) 。
+
+[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
