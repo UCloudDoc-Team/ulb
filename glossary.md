@@ -21,5 +21,5 @@ ULB监听器，每个VServer是一组负载均衡前端端口配置。包含协�
 
 内网ULB，提供服务的IP地址为内网IP地址。
 
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
+
 
