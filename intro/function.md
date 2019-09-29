@@ -24,6 +24,3 @@
 | 重定向 | — | — | 暂不支持HTTP访问重定向至HTTPS |
 | 双向认证 | — | — | 暂不支持HTTPS双向认证 |
 
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
-
-
