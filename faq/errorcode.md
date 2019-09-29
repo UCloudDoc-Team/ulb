@@ -18,4 +18,3 @@ ULB的错误码基本是遵循HTTP的规范。
 * 503 Service Unavailable No server is available to handle this request.
 * 504 Gateway Time-out The server didn't respond in time.
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
