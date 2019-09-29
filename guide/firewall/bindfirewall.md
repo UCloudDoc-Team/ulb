@@ -24,4 +24,3 @@ ULB可以绑定防火墙，实现对源地址的访问控制。
 
 5，绑定完成后，将展示防火墙的相关信息。
 
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
