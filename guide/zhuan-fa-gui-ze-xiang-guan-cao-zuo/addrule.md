@@ -24,5 +24,4 @@ HTTP/HTTPS协议下，VServer支持根据转发策略匹配域名或访问路径
 
 ![](https://static.ucloud.cn/21e20e38813d4d95b6c8b105f951bf50.png)
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
 
