@@ -19,4 +19,3 @@
 
 4、配置完成后可在左侧看到新增的VServer，并可以查看VServer绑定的证书。
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
