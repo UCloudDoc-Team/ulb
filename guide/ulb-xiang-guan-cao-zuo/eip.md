@@ -28,5 +28,4 @@
 
 ![](https://static.ucloud.cn/138aff2bfb234d44a4f6cef6c25c1f86.png)
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
 
