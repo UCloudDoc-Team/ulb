@@ -24,4 +24,3 @@
 |证书格式|授权证书(.crt文件)：证书机构下发的公钥文件。授权证书(.key文件)：证书机构下发的私钥文件|CA机构证书(.crt文件)：证书机构证明自身是权威机构的证明|
 
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
