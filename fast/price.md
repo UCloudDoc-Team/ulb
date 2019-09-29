@@ -9,4 +9,3 @@
 | 外网ULB | 免费 | 见[EIP收费说明](https://docs.ucloud.cn/network/unet/eip_price) |
 | 内网ULB | 免费 | 免费 |
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
