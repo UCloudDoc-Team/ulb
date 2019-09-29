@@ -16,4 +16,3 @@
 
 报文转发模式下（TCP、UDP），会话保持功能是基于IP地址的会话保持。ULB会将来自同一IP地址的访问请求转发到同一台后端云服务器进行处理。
 
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
