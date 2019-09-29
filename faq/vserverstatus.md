@@ -9,4 +9,3 @@
 
 需注意的是，后端状态由负载均衡健康检查确定。如果健康检查失败，即使服务器还能ping通，也认为是宕机。
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
