@@ -12,5 +12,4 @@
 * **加权轮询**。ULB接收到新的TCP连接后，将根据您指定的后端服务节点的不同权重，按照概率分配给各个服务节点。
 * **最小连接数**。ULB接受到新的TCP连接后，会实时统计ULB到后端服务节点的连接数，选择连接数最低的服务节点建立新连接并发送数据。（仅请求代理模式支持）
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
 
