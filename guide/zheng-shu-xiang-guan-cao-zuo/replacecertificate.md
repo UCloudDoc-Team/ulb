@@ -14,4 +14,3 @@
 
 ![](https://static.ucloud.cn/32563f3f7a754236af26f08e552b22bc.png)
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
