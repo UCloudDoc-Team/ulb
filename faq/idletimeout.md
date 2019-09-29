@@ -10,4 +10,3 @@ ULB中默认打开连接保持，默认连接保持时间为60秒。例如在第
 
 目前具有连接空闲超时的协议有HTTP、HTTPS、TCP的请求代理模式。
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
