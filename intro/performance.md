@@ -18,4 +18,3 @@
 | 外网ULB | 七层 | 40,000（4,000 ssl） | 300,000 | 800M | 400,000 |
 | 内网ULB | 四层 | 600,000 | 100,000,000 | 30G | 21,000,000 |
 
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
