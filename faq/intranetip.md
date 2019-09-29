@@ -8,4 +8,3 @@
 
 ULB 在各个区域的代理IP网段见[公共服务网段](https://docs.ucloud.cn/network/vpc/limit)。
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
