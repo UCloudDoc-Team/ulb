@@ -31,6 +31,4 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 
 ![](https://static.ucloud.cn/ca55ac7d3cec46c281c409093303c787.png)
 
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
-
 
