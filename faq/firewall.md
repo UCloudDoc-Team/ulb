@@ -15,4 +15,3 @@ ULB支持防火墙功能，使用方式如下：
 该功能正在灰度中。
 
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
