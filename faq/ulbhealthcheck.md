@@ -24,4 +24,3 @@ HTTP检查域名，不建议填写"http:"或"https:"，直接填写域名或IP�
 
 HTTP检查支持的协议:HTTP协议、HTTPS协议（七层服务）。
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
