@@ -34,4 +34,3 @@
 |带宽|选择“新购”外网IP时，需选择IP的带宽值。|
 |外网防火墙|外网模式下，可绑定外网防火墙进行访问控制。可选不绑定、绑定。|
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
