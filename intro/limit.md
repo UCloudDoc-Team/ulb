@@ -13,5 +13,3 @@ ULB 在各个区域的网段见[公共服务网段](https://docs.ucloud.cn/netwo
 ## HTTP报文头限制
 
 ULB的默认报文头大小为8K。配置时需确保HTTP报文头大小不超过8K，否则会造成ULB无法正常工作。
-
- [[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
