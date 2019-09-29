@@ -24,4 +24,3 @@
 
 2，点击**删除**即完成批量删除。
 
-[[https://github.com/UCloudDocs/UCloud-document/issues/3|{{https://static.ucloud.cn/e7fec9d74c744c448d757fad04fe1bcb.png}}]]
