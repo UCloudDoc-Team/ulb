@@ -2,7 +2,7 @@
 [前往 Github](https://github.com/UCloudDocs/UCloud-document/tree/master/network/ulb)
 
 
-{{indexmenu_n>5}}
+
 
 # 技术架构
 
