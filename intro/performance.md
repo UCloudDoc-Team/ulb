@@ -1,7 +1,3 @@
-[前往 Github](https://github.com/UCloudDocs/UCloud-document/tree/master/network/ulb)
-
-
-
 # 性能指标
 
 ## ULB性能指标
