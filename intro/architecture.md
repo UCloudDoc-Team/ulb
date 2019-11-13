@@ -7,7 +7,7 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 
 内网ULB4是基于DPDK技术自研的。单台服务器可以提供超过3000万并发连接，1000万 pps，10G线速转发能力。采用集群部署，单个集群至少4台服务器。利用ECMP+ BGP实现高可用。
 
-内网ULB4采用了类似于DR的转发模式。内网负载均衡转发示意图如下：
+内网ULB4采用了类似于DR的转发模式，其转发示意图如下：
 
 ![](https://static.ucloud.cn/860b15cd48ec4d099e47886928b832e2.png)
 
@@ -17,7 +17,7 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 
 ## 外网ULB4
 
-外网ULB4与内网ULB4类似，同样是基于DPDK技术自研的。单台服务器可以提供超过3000万并发连接，1000万 pps，10G线速转发能力。采用集群部署，单个集群至少4台服务器。利用ECMP+ BGP实现高可用。同样的，它采用了类似于DR的转发模式。外网负载均衡转发示意图如下：
+外网ULB4与内网ULB4类似，同样是基于DPDK技术自研的。单台服务器可以提供超过3000万并发连接，1000万 pps，10G线速转发能力。采用集群部署，单个集群至少4台服务器。利用ECMP+ BGP实现高可用。同样的，它采用了类似于DR的转发模式。其转发示意图如下：
 
 ![](https://static.ucloud.cn/117279d9aac8448f9688d5ca5c282b94.png)
 
@@ -25,13 +25,22 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 
 在外网ULB4中，集群健康检查模块将定时探测服务器的存活状态，如果发现服务器有问题，则将通知UVER，将异常服务器剔除，从而保证高可用。同样的，外网ULB4集群也是跨可用区高可用的。
 
+
+## 内网ULB7
+
+内网ULB7是基于容器技术开发的多用户负载均衡服务。单个实例可以提供超过40w pps，2Gbps，以及至少40万并发连接。采用集群部署，单个集群至少4台服务器。利用ECMP+BGP实现高可用，采用类似LVS-DR模式的转发，其转发示意图如下：
+
+![](/images/ulb71.jpg)
+
+
+
 ## 外网ULB7
 
-ULB7基于Haproxy开发，单个实例可以支持超过40w pps，2Gbps，以及至少40万并发连接。ULB利用CPU的亲和性，实现核的隔离和资源控制。
+ULB7基于Haproxy开发，单个实例可以支持超过40w pps，2Gbps，以及至少40万并发连接。ULB利用CPU的亲和性，实现核的隔离和资源控制，其转发示意图如下：
 
 ![](https://static.ucloud.cn/c5131ef063c54fddbce7b26aaf281992.png)
 
-与ULB4采用的DR模式不同，ULB7采用的是Proxy模式，也就是Fullnat模式。收到Client的请求之后，ULB7将client到ULB7 EIP的连接，转化为ULB7的proxy ip到Backend实际ip的连接。因此Backend无法直接看到Client ip。另外，健康检查模块是集成在ULB7进程中的，因此不需要额外的节点健康检查模块。
+与ULB4采用的DR模式不同，ULB7采用的是Proxy模式，也就是Fullnat模式。收到Client的请求之后，ULB7将Client到ULB7 EIP的连接，转化为ULB7的proxy ip到Backend实际ip的连接。因此Backend无法直接看到Client ip。另外，健康检查模块是集成在ULB7进程中的，因此不需要额外的节点健康检查模块。
 
 同样的，在外网ULB7中，集群健康检查模块将定时探测服务器的存活状态，如果发现服务器有问题，则将通知UVER，将异常服务器剔除，从而保证高可用。同样的，外网ULB7集群也是跨可用区高可用的。
 
