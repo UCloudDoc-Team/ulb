@@ -43,7 +43,7 @@ NETMASK=255.255.255.255
 
 1、获取服务IP地址 您可以在管理控制台概览页查看到对应的ULB服务IP地址，如下图所示
 
-![](/network/ulb/images/%E8%8E%B7%E5%8F%96vip.png)
+![](/images/%E8%8E%B7%E5%8F%96vip.png)
 
 若使用自动化脚本配置，可使用API describe\_ulb获取服务IP地址。如何调用此API请参考：
 
@@ -74,15 +74,15 @@ netmask 255.255.255.255
 
 依次在“设备管理器”中选择"网络适配器"，并在菜单栏中点击“操作”→“添加过时硬件”→“安装我从手动列表安装的硬件”。并在厂商中选择"Microsoft"，网络适配器选择“Microsoft Loopback Adapter”（注意在windows8、windows server2012及更新版本中，“Microsoft Loopback Adapter”更名为“Microsoft KM-TEST 环回适配器”）。并点击下一步完成设备创建。
 
-![](https://docs.ucloud.cn/_media/network/ulb/win1.png)
+![](/images/win1.png)
 
-![](https://docs.ucloud.cn/_media/network/ulb/win2.png)
+![](/images/win2.png)
 
 2、配置lo接口
 
 在“网络和共享中心”中，选择更改适配器设置，并配置lo接口，配置内容如图片所示：
 
-![](https://docs.ucloud.cn/_media/network/ulb/win3.png)
+![](/images/win3.png)
 
 图中10.10.94.111的地址，即为负载均衡器的内网服务IP地址。
 
@@ -101,7 +101,7 @@ Pause
 
 执行效果如图所示
 
-![](https://docs.ucloud.cn/_media/network/ulb/win4.png)
+![](/images/win4.png)
 
 建议配置windows系统时通过VNC登陆进行操作，如以上操作未生效，可在执行完"netsh"后重启网卡或服务进行查看。
 
