@@ -42,7 +42,7 @@ NETMASK=255.255.255.255
 
 1、获取服务IP地址 您可以在管理控制台概览页查看到对应的ULB服务IP地址，如下图所示
 
-![](https://docs.ucloud.cn/_media/network/ulb/%E8%8E%B7%E5%8F%96vip.png)
+![](/network/ulb/images/%E8%8E%B7%E5%8F%96vip.png)
 
 若使用自动化脚本配置，可使用API describe\_ulb获取服务IP地址。如何调用此API请参考：
 
