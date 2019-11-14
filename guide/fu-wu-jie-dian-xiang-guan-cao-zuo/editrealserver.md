@@ -16,7 +16,7 @@
 
 2、获取网卡VIP 您可以在管理控制台概览页查看到我们的VIP，如下图所示
 
-![](https://docs.ucloud.cn/_media/network/ulb/%E8%8E%B7%E5%8F%96vip.png)
+![](/network/ulb/images/%E8%8E%B7%E5%8F%96vip.png)
 
 如果您使用自动化脚本配置，我们建议您使用我们的API describe\_ulb获取您配置所需的VIP。如何调用此API请参考：
 
