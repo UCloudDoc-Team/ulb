@@ -1,7 +1,7 @@
 # 概览
 
 * 产品简介
-    * [什么是ULB.](network/ulb/intro/whatisulb)
+    * [什么是ULB](network/ulb/intro/whatisulb)
     * [产品功能](network/ulb/intro/function)
     * [技术架构](network/ulb/intro/architecture)
     * [性能指标](network/ulb/intro/performance)
