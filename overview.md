@@ -62,9 +62,5 @@
 * API工具
     * [UAPI简介](network/ulb/api/uapi)  
     
-```html
-<script src="//unpkg.com/docsify"></script>
-<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
-<script src="//unpkg.com/prismjs/components/prism-php.js"></script>
-```
+
         
