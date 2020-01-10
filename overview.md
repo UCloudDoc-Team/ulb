@@ -64,22 +64,5 @@
     
 
         
-        
- <!-- tabs:start -->
 
-#### ** Python **
-
-```python
-# some code
-```
-
-?> 提示：详情可参考开源 [示例代码](some url)。
-
-#### ** Go **
-
-```go
-// some code
-```
-
-<!-- tabs:end -->
         
