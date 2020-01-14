@@ -14,18 +14,20 @@
 # touch /etc/sysconfig/network-scripts/ifcfg-lo:1
 ```
 
-2、获取网卡VIP 您可以在管理控制台概览页查看到我们的VIP，如下图所示
+2、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
 
+内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址
 ![](/images/%E8%8E%B7%E5%8F%96vip.png)
 
+外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
+![](/images/ulb-vip.png)
 
 如果您使用自动化脚本配置，我们建议您使用我们的API describe\_ulb获取您配置所需的VIP。如何调用此API请参考：
 
 [获取负载均衡信息-DescribeULB](https://docs.ucloud.cn/api/ulb-api/describe_ulb)
 
-内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
 
-3、将命令中得到的内容添加进"/etc/sysconfig/network-scripts/ifcfg-lo:1"中，即如下内容：
+3、将命令中得到的内容添加进"/etc/sysconfig/network-scripts/ifcfg-lo:1"中，若ULB绑定多个EIP，则多个EIP均需要配置。即如下内容：
 
 ```
 DEVICE=lo:1
@@ -41,9 +43,13 @@ NETMASK=255.255.255.255
 
 ### Ubuntu中的配置方法
 
-1、获取服务IP地址 您可以在管理控制台概览页查看到对应的ULB服务IP地址，如下图所示
+1、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
 
+内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址
 ![](/images/%E8%8E%B7%E5%8F%96vip.png)
+
+外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
+![](/images/ulb-vip.png)
 
 若使用自动化脚本配置，可使用API describe\_ulb获取服务IP地址。如何调用此API请参考：
 
