@@ -6,5 +6,5 @@
 
 例如，用户在北京二的后端云主机访问日志中发现大量来自 10.10.251.0/24 网段的访问，即为北京二 ULB 的内网代理 IP。 
 
-ULB 在各个区域的代理IP网段见[公共服务网段](https://docs.ucloud.cn/network/vpc/limit)。
+ULB 在各个区域的代理IP网段见[公共服务网段](https://docs.ucloud.cn/vpc/limit)。
 

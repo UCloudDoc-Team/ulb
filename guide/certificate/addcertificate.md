@@ -20,7 +20,7 @@
 |配置|说明|
 |---|---|
 |证书名称	|证书名称，必填项。|
-|证书内容|如果选择本地上传证书，选择您本地的授权证书，包括.crt文件与.key文件。如果选择手动输入证书，则需要在输入框中手动填写证书，证书格式见[证书格式要求](https://docs.ucloud.cn/network/ulb/guide/certificate/certificateformat)|
+|证书内容|如果选择本地上传证书，选择您本地的授权证书，包括.crt文件与.key文件。如果选择手动输入证书，则需要在输入框中手动填写证书，证书格式见[证书格式要求](https://docs.ucloud.cn/ulb/guide/certificate/certificateformat)|
 |证书格式|授权证书(.crt文件)：证书机构下发的公钥文件。授权证书(.key文件)：证书机构下发的私钥文件|CA机构证书(.crt文件)：证书机构证明自身是权威机构的证明|
 
 
