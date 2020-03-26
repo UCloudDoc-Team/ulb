@@ -18,7 +18,7 @@
 
 1，ULB列表页选定外网ULB资源后，点击**详情**进入概览页。外网弹性IP卡片，选定需要解绑的EIP，点击**解绑**。 
 
-![](https://static.ucloud.cn/f8f8e10210da4986b27243f7a08be85e.png)
+![](/images/unbindeip01.png)
 
 2，批量解绑ULB绑定的EIP，可前往外网弹性IP页面操作。
 
