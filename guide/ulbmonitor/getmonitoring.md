@@ -13,7 +13,7 @@
 * 网络总出口（bps/Kbps/Mbps）：ULB出口总带宽
 * 网络总入口（bps/Kbps/Mbps）：ULB入口总带宽
 
-![](https://static.ucloud.cn/b2965b2eac644c3a8075e9319e81775a.png)
+![](/images/ulbmonitor01.png)
 
 ### VServer监控
 
