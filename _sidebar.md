@@ -10,8 +10,8 @@
 * 购买指南
     * [产品定价](/ulb/fast/price)
     * 产品选型
-        * [ULB：网络模式](/ulb/fast/createulb/networktype)
-        * [VServer：监听器协议／类型](/ulb/fast/createulb/vservertype)
+        * [ULB：负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
+        * [VServer：监听器协议](/ulb/fast/createulb/vservertype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
 * 操作指南
     * ULB
