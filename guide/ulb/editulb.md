@@ -12,7 +12,7 @@
 
 1，ULB列表页，点击名称列的**修改名称及备注。**
 
-![](/images/editulb01.png)
+![](/images/editulb02.png)
 
 ### ULB概览页
 
@@ -22,7 +22,7 @@
 
 3，基本信息卡片，点击资源名称后的**编辑图标**。
 
-![](https://static.ucloud.cn/e448e6c4a31e482bb9e88a7c95df6e37.png)
+![](/images/editulb01.png)
 
 ### 配置说明
 
