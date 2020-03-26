@@ -12,7 +12,7 @@
 
 2，选择需要删除的ULB实例，点击**删除**。
 
-![](https://static.ucloud.cn/824bdae3c0a64585ad3a67526902b581.png)
+![](/images/deleteulb01.png)
 
 3，删除后，ULB实例将被删除。外网ULB，对外提供服务的外网弹性IP（EIP）使用超过7天，删除后将进入EIP回收站。
 
