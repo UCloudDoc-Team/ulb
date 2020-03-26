@@ -12,7 +12,7 @@
 
 1，ULB列表页，点击名称列的**修改名称及备注。**
 
-![](https://static.ucloud.cn/b1e0a700da7f477198fe3da3206ec887.png)
+![](/images/editulb01.png)
 
 ### ULB概览页
 
