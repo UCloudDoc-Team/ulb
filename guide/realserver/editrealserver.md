@@ -14,6 +14,12 @@
 # touch /etc/sysconfig/network-scripts/ifcfg-lo:1
 ```
 
+注意，如果使用的系统版本为CentOS 8.0及以上，那么需要首先安装network-scripts:
+
+```
+# yum install network-scripts
+```
+
 2、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
 
 内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。
