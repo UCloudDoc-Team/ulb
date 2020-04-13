@@ -17,7 +17,7 @@
 注意，如果使用的系统版本为CentOS 8.0及以上，那么需要首先安装network-scripts:
 
 ```
-# yum install network-scripts
+# yum install network-scripts -y
 ```
 
 2、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
