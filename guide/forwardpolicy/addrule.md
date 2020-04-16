@@ -16,7 +16,18 @@ HTTP/HTTPS协议下，VServer支持根据转发策略匹配域名或访问路径
 ![](https://static.ucloud.cn/b094d66652b0429d9371919d5ebe9c5d.png)
 
 
-2，**转发规则**。转发规则分为“域名转发”与“路径转发”两种，这两种转发方式均可使用正则表达式或通配符进行描述，如“www.\[123\].demo.com”或“/path/img/\*.jpg”，创建规则时规则内容不可为空。
+2，**转发规则**。转发规则分为“域名转发”与“路径转发”两种，这两种转发方式均可使用符合PCRE规则的正则表达式进行描述。
+
+域名转发为例：
+- www.\[123\].demo.com  可以匹配 www.1.demo.com  www.2.demo.com www.3.demo.com
+- .\*.demo.com 可以匹配 www.demo.com news.demo.com
+
+
+路径转发为例：
+
+- /path/img/.\*.jpg  可以匹配/path/img/test.jpg  /path/img/photo.jpg
+
+注意：目前正则匹配不支持转义。创建规则时规则内容不可为空。
 
 3，**可选节点**。每条规则均需要与已有的服务节点进行关联，选择需要关联的节点。
 
