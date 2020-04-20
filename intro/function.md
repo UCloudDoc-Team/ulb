@@ -16,7 +16,9 @@
 | SSL Offloading | ✔ | — | 支持HTTPS SSL Offloading |
 | WebSocket | ✔ | ✔ | 支持WebSocket协议 |
 | IPv6地址支持 | ✔ | — | 支持转发IPv6流量 |
+| 挂载混合云节点 | ✔ | ✔ | 仅请求代理类型支持 |
 | HTTP/2 | — | — | 暂不支持HTTP/2 |
 | 重定向 | — | — | 暂不支持HTTP访问重定向至HTTPS |
 | 双向认证 | — | — | 暂不支持HTTPS双向认证 |
+
 
