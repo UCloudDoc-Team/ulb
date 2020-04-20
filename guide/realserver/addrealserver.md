@@ -27,10 +27,10 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 3，在可选资源列表中，选中需要添加资源的**勾选框**，并移入右侧带添加节点列表中。
 
 添加云主机/物理云主机/容器/托管Hadoop集群，填写端口后再进行资源选择：
-![](images/realserver-uhost.png)
+![](/images/realserver-uhost.png)
 
 添加混合云主机：
-![](images/realserver-hybrid.png)
+![](/images/realserver-hybrid.png)
 
 
 4，点击**确定**即完成节点添加。
