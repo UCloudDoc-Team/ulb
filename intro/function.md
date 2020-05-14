@@ -13,7 +13,7 @@
 | 外网防火墙 | ✓ | — | 支持绑定外网防火墙，实现对访问源端的黑白名单管理 |
 | 域名转发 | ✓ | — | 支持按照访问域名和URL转发流量到不同的后端节点 |
 | 证书管理 | ✓ | — | 支持HTTPS证书管理 |
-| SSL Offloading | ✔ | — | 支持HTTPS SSL Offloading |
+| SSL Offloading | ✓ | — | 支持HTTPS SSL Offloading |
 | WebSocket | ✓ | ✓ | 支持WebSocket协议 |
 | IPv6地址支持 | ✓ | — | 支持转发IPv6流量 |
 | 挂载混合云节点 | ✓ | ✓ | 仅请求代理类型支持 |
