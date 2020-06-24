@@ -6,6 +6,8 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 ## 名词
 
 - **UVER**：UCloud Virtual Edge Router，UCloud的公网流量转发中心。UVER从业务库中获取所有EIP的下一跳信息，并将EIP的流量进行封装转发。
+- ULB4集群、ULB4服务器、ULB4健康检查、ULB7集群、ULB7集群、ULB7服务器、ULB7健康检查都是指ULB本身相关的概念，与配置的服务节点，即实际提供服务的主机无关。
+- 节点健康检查：指ULB对于后端服务节点健康状态的检测，本节外出现的健康检查基本都指“节点健康检查”。
 
 
 ## 内网ULB4
@@ -16,9 +18,13 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 
 ![](https://static.ucloud.cn/860b15cd48ec4d099e47886928b832e2.png)
 
-如上图，同一个集群的ULB4通过向其上联的接入交换机宣告相同的VIP，而接入交换机配置了ECMP算法，因此可将流量负载均衡到多台服务器上，从而够成了集群。当某些ULB4发生转发异常的时候，BGP报文转发也会停止转发，在三秒之内该ULB4服务器就会被剔出集群，从而保证高可用，同时集群健康检查模块也将发出告警，使得工程师介入处理。此外同一个ULB4集群的服务器都是跨可用区分布的，从而保证集群跨可用区高可用。
+ULB4集群架构
 
-此外，ULB4中还有个模块负载后端节点的健康检查（目前仅支持TCP/UDP端口探测），并上报给ulb4manager和ULB4转发服务器。ULB4转发服务器收到Client的业务报文后，将从状态正常的后端节点中选择一个，修改目的mac后打隧道送到后端节点，注意其中的源IP和目的IP都是不变的。此时，后端节点必须在LO口绑定ULB4的虚拟IP地址，并监听服务，才能正确处理报文，并将回包直接单播送回给Client。这是一个典型的DR过程。因此内网ULB4可以直接看到Client的源IP。
+如上图，ULB4集群通过向其上联的接入交换机宣告相同的VIP（虚拟IP），接入交换机配置了ECMP算法，能将流量负载均衡到多台ULB服务器上，从而构成了ULB4集群。当ULB4集群中某些服务器发生转发异常的时候，BGP报文转发也会停止转发，在三秒之内该ULB4服务器就会被剔出服务器集群，从而保证高可用，同时ULB4集群健康检查模块也将发出告警，使得工程师介入处理。此外同一个ULB4集群的服务器都是跨可用区分布的，从而保证ULB4集群跨可用区高可用。
+
+ULB4节点控制
+
+ULB4中有模块专门负责后端节点的健康检查（目前仅支持TCP/UDP端口探测），并上报给ULB4Manager和ULB4转发服务器。ULB4转发服务器收到Client的业务报文后，将从状态正常的后端节点中选择一个，修改目的mac后打隧道送到后端节点，过程中其中的**源IP和目的IP保持不变**，内网ULB4因此可以直接看到Client的源IP。ULB4模式下后端节点必须在**LO口**绑定ULB4的VIP（虚拟IP）地址，并监听服务，才能正确处理报文，并将回包直接单播送回给Client。
 
 ## 外网ULB4
 
@@ -26,9 +32,9 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 
 ![](https://static.ucloud.cn/117279d9aac8448f9688d5ca5c282b94.png)
 
-与内网ULB4不同的是，外网流量是从公网进来的。Client访问ULB4的流量进入UCloud POP点，进入UVER（UCloud Virtual Edge Router）。UVER是UCloud自研的公网流量计算中心，它能够从业务库中获知所有的EIP的下一跳信息，通过BGP引流后，将EIP的流量打隧道送到相应的下一跳。一个ULB4的EIP会落到ULB4集群中的所有服务器上，因此UVER将这部分流量，按照一致性哈希算法负载均衡送到集群各个服务器中。后续的流程与内网ULB4类似。Backend节点中需要将ULB的EIP绑定在LO，并监听服务，而回程报文将直接送到UVER，并通过internet返回Client。
+与内网ULB4不同的是，外网流量是从公网进来的。Client访问ULB4的流量进入UCloud POP点，进入UVER（UCloud Virtual Edge Router）。UVER是UCloud自研的公网流量计算中心，能够从业务库中获知所有的EIP的下一跳信息，通过BGP引流后，将EIP的流量建立隧道送到相应的下一跳。一个ULB4的EIP会落到ULB4集群中的所有ULB4服务器上，因此UVER将这部分流量，按照一致性哈希算法送到ULB4集群各个服务器中。后续的流程与内网ULB4类似。Backend节点中需要将ULB的EIP绑定在**LO口**，并监听服务，而回程报文将直接送到UVER，并通过internet返回Client。
 
-在外网ULB4中，集群健康检查模块将定时探测服务器的存活状态，如果发现服务器有问题，则将通知UVER，将异常服务器剔除，从而保证高可用。同样的，外网ULB4集群也是跨可用区高可用的。
+在外网ULB4中，ULB4集群健康检查模块将定时探测ULB4服务器的存活状态，如果发现有ULB4服务器有问题，则将通知UVER，将异常ULB4服务器剔除，从而保证高可用。同样的，外网ULB4集群也是跨可用区高可用的。
 
 ## 内网ULB7
 
@@ -36,9 +42,9 @@ ULB7基于Haproxy开发，单个实例可以支持超过40w pps，2Gbps，以及
 
 ![](/images/内网ULB7转发面架构.jpg)
 
-内网ULB7采用集群部署，单个集群至少4台服务器。租户底层共用服务器，但是采用Docker进行资源隔离和CPU的隔离。与ULB4采用的DR模式不同，ULB7采用的是Proxy模式，也就是Fullnat模式，收到Client的请求之后，内网ULB7将client到ULB7 IP的连接，转化为ULB7的proxy ip到Backend实际ip的连接。因此Backend无法直接看到Client ip，只能通过X-Forwarded-For（HTTP模式）获取。
+内网ULB7采用集群部署，单个ULB7集群至少4台服务器。租户底层共用服务器，但是采用Docker进行资源隔离和CPU的隔离。与ULB4采用的DR模式不同，ULB7采用的是Proxy模式（即Fullnat模式）。收到Client的请求之后，内网ULB7将client到ULB7 IP的连接，转化为ULB7的proxy IP到Backend（服务节点）实际IP的连接。因此Backend（服务节点）无法直接看到Client ip，只能通过X-Forwarded-For（HTTP模式）获取。
 
-内网ULB7同样利用ECMP+ BGP实现高可用。内网ULB7服务器通过Quagga与上联交换机建立BGP连接。同集群下的多台ULB7服务器，将向上联交换机发起相同的VIP宣告。这样上联交换机会根据ECMP算法，将流量负载均衡到集群中的各台服务器。当服务器发生异常时，三秒内BGP会中断，从而将服务器踢出集群，保证业务仍然可以正常工作。
+内网ULB7利用ECMP+ BGP实现高可用，内网ULB7服务器通过Quagga与上联交换机建立BGP连接。同ULB7集群下的多台ULB7服务器，将向上联交换机发起相同的VIP（虚拟IP）宣告。这样上联交换机会根据ECMP算法，将流量负载均衡到集群中的各台ULB7服务器。当有ULB7服务器发生异常时，三秒内BGP会中断，从而将故障ULB7服务器踢出集群，保证ULB7服务仍然可以正常工作。
 
 ## 外网ULB7
 
@@ -46,12 +52,12 @@ ULB7基于Haproxy开发，单个实例可以支持超过40w pps，2Gbps，以及
 
 ![](https://static.ucloud.cn/c5131ef063c54fddbce7b26aaf281992.png)
 
-与ULB4采用的DR模式不同，ULB7采用的是Proxy模式，也就是Fullnat模式。收到Client的请求之后，ULB7将client到ULB7 EIP的连接，转化为ULB7的proxy ip到Backend实际ip的连接。因此Backend无法直接看到Client ip。另外，健康检查模块是集成在ULB7进程中的，因此不需要额外的节点健康检查模块。
+与ULB4采用的DR模式不同，ULB7采用的是Proxy模式，也就是Fullnat模式。收到Client的请求之后，ULB7将client到ULB7 EIP的连接，转化为ULB7的proxy ip（代理IP）与Backend（服务节点）实际ip的连接。因此Backend无法直接看到Client ip。另外，节点健康检查模块是集成在ULB7进程中的，因此不需要额外的节点健康检查模块。
 
-同样的，在外网ULB7中，集群健康检查模块将定时探测服务器的存活状态，如果发现服务器有问题，则将通知UVER，将异常服务器剔除，从而保证高可用。同样的，外网ULB7集群也是跨可用区高可用的。
+同样的，在外网ULB7中，ULB7集群健康检查模块将定时探测ULB7服务器的存活状态，如果发现ULB7服务器有问题，则将通知UVER，将异常服务器剔除，从而保证高可用。同样的，外网ULB7集群也是跨可用区高可用的。
 
 ## 模式比对
 
-相对于ULB7，ULB4转发能力更强，适合与追求转发性能的场景。而ULB7则可以对七层数据进行处理，可以进行SSL的卸载，执行域名转发、路径转发等功能，并且后端节点不需要额外配置VIP。
+相对于ULB7，ULB4转发能力更强，适合与追求转发性能的场景。而ULB7则可以对七层数据进行处理，可以进行SSL的卸载，执行域名转发、路径转发等功能，并且后端节点不需要额外配置VIP（虚拟IP）。
 
  
