@@ -4,10 +4,10 @@
 
 ## 请求代理
 
-请求代理模式下（HTTP、HTTPS），会话保持功能是利用cookie实现的。ULB会向源端写cookie，并根据请求带有的cookie信息，直接将请求送给对应的后端主机。服务端插入指, 由负载均衡生成cookie的key. 用户定义指由用户指定特征cookie的key.
+请求代理模式下（HTTP、HTTPS），会话保持功能是利用cookie实现的。ULB会向源端写cookie，并根据请求带有的cookie信息，直接将请求送给对应的后端主机。
 
-* **Cookie插入**：选择自动生成key，客户端的cookie插入操作都由ULB来分配和管理。
-* **用户指定Cookie插入**：用户可自定义key，ULB使用客户的key来分配和管理对客户端进行的Cookie插入操作
+* **自动生成KEY**：选择自动生成key，客户端的cookie插入操作都由ULB来分配和管理。
+* **用户自定义KEY**：用户自定义key，ULB使用客户的key来分配和管理对客户端进行的Cookie插入操作
 
 > TCP协议的请求代理模式，不支持会话保持。
 
