@@ -24,7 +24,7 @@ HTTP/HTTPS协议下，VServer支持根据转发策略匹配域名或访问路径
 
 
 路径转发为例：
-- /path/img/.\*.jpg  ULB会对该路径下面所有jpg文件请求进行负载均衡，如用户请求/path/img/test.jpg时，ULB会根据流量分发规则，让配置的服务节点响应该请求
+- /path/img/.\*.jpg  可以匹配/path/img/test.jpg  /path/img/photo.jpg
 
 
 注意：目前正则匹配不支持包含转义符"\\"的字符串。创建规则时规则内容不可为空。
