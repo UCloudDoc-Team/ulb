@@ -19,12 +19,13 @@ HTTP/HTTPS协议下，VServer支持根据转发策略匹配域名或访问路径
 2，**转发规则**。转发规则分为“域名转发”与“路径转发”两种，这两种转发方式均可使用符合PCRE规则的**正则表达式**进行描述。
 
 域名转发为例：
-- `www.\[123\].demo.com`  可以匹配 `www.1.demo.com  www.2.demo.com www.3.demo.com`
-- .\*.demo.com 可以匹配 `www.demo.com news.demo.com`
+- `www.\[123\].demo.com`  可以匹配 `www.1.demo.com 、 www.2.demo.com 、www.3.demo.com`
+- .\*.demo.com 可以匹配 `www.demo.com 、 news.demo.com`
 
 
 路径转发为例：
-- /path/img/.\*.jpg  可以匹配/path/img/test.jpg  /path/img/photo.jpg
+
+- /path/img/.\*.jpg  可以匹配/path/img/test.jpg、/path/img/photo.jpg
 
 
 注意：目前正则匹配不支持包含转义符"\\"的字符串。创建规则时规则内容不可为空。
