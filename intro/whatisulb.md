@@ -10,8 +10,8 @@ ULB针对七层协议支持HTTP、HTTPS协议（类Nginx或HAproxy）；四层�
 
 ULB服务主要由以下三个部分构成：
 
-* ULB服务实例（UCloud LoadBalancer）：即在系统中创建的ULB，用来接收流量并进行流量分发。
-* 虚拟服务器／监听器（VServer）：监听器，每个VServer是一组负载均衡前端端口配置，负责服务节点（主机）的健康检查和和故障节点清除。
+* ULB服务实例（UCloud LoadBalancer）：用来接收流量并进行流量分发。
+* 虚拟服务器／监听器（VServer）：监听器，每个VServer是一组负载均衡前端端口配置。
 * 服务节点（RealServer／Backend）：后端真实处理请求的云资源。
 
 ![](https://static.ucloud.cn/4f99935ea27846559c12661ac55d34f1.png)
