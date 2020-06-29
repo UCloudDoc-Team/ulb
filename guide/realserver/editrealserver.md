@@ -1,10 +1,19 @@
-
-
 # 报文转发模式服务节点配置
+
+服务节点配置的目的在于将负载均衡器的VIP配置到后端服务实例上即可。无论使用何种方法，只要达到这一目的即可。下文提供了不同系统的一种配置方法：
+
+<a href="#head1">`CentOs系统配置方法`</a>
+
+<a href="#head2">`Ubuntu系统配置方法`</a>
+
+<a href="#head3">`Windows系统配置方法`</a>
 
 ## 操作步骤
 
 “报文转发模式”下，由于用户访问会经ULB直接透传，必须保证访问地址落在后端真实服务节点上，所以要将负载均衡的内/外网IP地址配置在后端服务节点中。配置方法如下。
+
+
+<a id="head1"/>
 
 ### CentOS中的配置方法
 
@@ -47,6 +56,8 @@ NETMASK=255.255.255.255
 # ifup lo:1
 ```
 
+<a id="head2"/>
+
 ### Ubuntu中的配置方法
 
 1、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
@@ -80,23 +91,29 @@ netmask 255.255.255.255
 # ifup lo:1
 ```
 
+<a id="head3"/>
+
 ### Windows中的配置方法
 
 1、添加lo接口
 
 依次在“设备管理器”中选择"网络适配器"，并在菜单栏中点击“操作”→“添加过时硬件”→“安装我从手动列表安装的硬件”。并在厂商中选择"Microsoft"，网络适配器选择“Microsoft Loopback Adapter”（注意在windows8、windows server2012及更新版本中，“Microsoft Loopback Adapter”更名为“Microsoft KM-TEST 环回适配器”）。并点击下一步完成设备创建。
 
-![](/images/win1.png)
+![](/images/windows1.png)
 
-![](/images/win2.png)
+![](/images/windows2.png)
 
 2、配置lo接口
 
-在“网络和共享中心”中，选择更改适配器设置，并配置lo接口，配置内容如图片所示：
+内网ULB时，lo接口的IP即为负载均衡器的内网服务IP地址。
+![](/images/%E8%8E%B7%E5%8F%96vip.png)
 
-![](/images/win3.png)
+外网ULB时，lo接口的IP为负载均衡器的外网服务IP地址（即EIP）。
+![](/images/ulb-vip.png)
 
-图中10.10.94.111的地址，即为负载均衡器的内网服务IP地址。
+然后在“网络和共享中心”中，选择更改适配器设置，并配置lo接口，配置内容如图片所示：
+
+![](/images/windows3.png)
 
 3、激活lo接口
 
@@ -115,8 +132,4 @@ Pause
 
 ![](/images/win4.png)
 
-建议配置windows系统时通过VNC登陆进行操作，如以上操作未生效，可在执行完"netsh"后重启网卡或服务进行查看。
-
-本质上讲，无论后端服务实例是何种操作系统，只要将负载均衡器的VIP配置到后端服务实例上即可。
-
-
+建议配置windows系统时通过VNC登陆云服务器进行操作，如以上操作未生效，可在执行完"netsh"后重启网卡或服务进行查看。
