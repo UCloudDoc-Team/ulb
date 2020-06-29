@@ -6,8 +6,6 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 ## 名词
 
 - **UVER**：UCloud Virtual Edge Router，UCloud的公网流量转发中心。UVER从业务库中获取所有EIP的下一跳信息，并将EIP的流量进行封装转发。
-- ULB4集群、ULB4服务器、ULB4健康检查、ULB7集群、ULB7集群、ULB7服务器、ULB7健康检查都是指ULB本身相关的概念，与配置的服务节点，即实际提供服务的主机无关。
-- 节点健康检查：指ULB对于后端服务节点健康状态的检测，本节外出现的健康检查基本都指“节点健康检查”。
 
 
 ## 内网ULB4
