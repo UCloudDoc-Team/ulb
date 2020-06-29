@@ -5,7 +5,7 @@ ULB（UCloud Load Balancer）提供流量分发的能力，保证业务可扩展
 
 ## 名词
 
-- **UVER**：UCloud Virutal Edge Router，UCloud的公网流量转发中心。UVER从业务库中获取所有EIP的下一跳信息，并将EIP的流量进行封装转发。
+- **UVER**：UCloud Virtual Edge Router，UCloud的公网流量转发中心。UVER从业务库中获取所有EIP的下一跳信息，并将EIP的流量进行封装转发。
 
 
 ## 内网ULB4
