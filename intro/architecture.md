@@ -36,7 +36,7 @@ ULB7基于Haproxy开发，单个实例可以支持超过40w pps，2Gbps，以及
 
 ![](/images/内网ULB7转发面架构.jpg)
 
-内网ULB7采用集群部署，单个ULB7集群至少4台服务器。租户底层共用服务器，但是采用Docker进行资源隔离和CPU的隔离。与ULB4采用的DR模式不同，ULB7采用的是Proxy模式（即Fullnat模式）。收到Client的请求之后，内网ULB7将client到ULB7 IP的连接，转化为ULB7的proxy IP到Backend（服务节点）实际IP的连接。因此Backend（服务节点）无法直接看到Client ip，只能通过X-Forwarded-For（HTTP模式）获取。
+内网ULB7采用集群部署，单个集群至少4台服务器。租户底层共用服务器，但是采用Docker进行资源隔离和CPU的隔离。与ULB4采用的DR模式不同，ULB7采用的是Proxy模式（即Fullnat模式）。收到Client的请求之后，内网ULB7将client到ULB7 IP的连接，转化为ULB7的proxy IP到Backend（服务节点）实际IP的连接。因此Backend（服务节点）无法直接看到Client ip，只能通过X-Forwarded-For（HTTP模式）获取。
 
 内网ULB7利用ECMP+ BGP实现高可用，内网ULB7服务器通过Quagga与上联交换机建立BGP连接。同ULB7集群下的多台ULB7服务器，将向上联交换机发起相同的VIP（虚拟IP）宣告。这样上联交换机会根据ECMP算法，将流量负载均衡到集群中的各台ULB7服务器。当有ULB7服务器发生异常时，三秒内BGP会中断，从而将故障ULB7服务器踢出集群，保证ULB7服务仍然可以正常工作。
 
