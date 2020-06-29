@@ -1,10 +1,5 @@
-<a id="head1"/>
-
+ 
 # 添加VServer
-
-<a href="#head1">`操作步骤`</a>
-
-<a href="#head2">`配置说明`</a>
 
 
 ## 操作步骤 
@@ -17,8 +12,6 @@ ULB实例创建完成后，可点击**详情**进入**VServer管理页面**添�
 
 ![](/images/vserver%E5%BB%BA%E7%AB%8Btcp.png)
 
-
-<a id="head2"/>
 
 ## 配置说明
 
