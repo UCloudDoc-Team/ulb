@@ -1,10 +1,5 @@
 # 创建ULB
 
-<a href="#head1">`操作步骤`</a>
-
-<a href="#head2">`配置说明`</a>
-
-<a id="head1"/>
 
 ### 操作步骤
 
@@ -21,8 +16,6 @@
 4，点击**立即购买**，即创建成功。
 
 ![](/images/createulb03.png)
-
-<a id="head2"/>
 
 ### 配置说明
 
