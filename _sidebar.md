@@ -58,7 +58,7 @@
     * [连接空闲超时的原理？](/ulb/faq/idletimeout)
     * [ULB健康检查机制是如何工作的？](/ulb/faq/ulbhealthcheck)
     * [VServer端口和服务节点端口是否必须一致？](/ulb/faq/vserverport)
-* [名词解释](/ulb/glossary)
+* [词汇表](/ulb/_glossary)
 * [新功能发布记录](/ulb/newfunctions)    
 * API工具
     * [UAPI简介](/ulb/api/uapi)  
