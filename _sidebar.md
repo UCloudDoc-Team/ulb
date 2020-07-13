@@ -45,19 +45,22 @@
     * 监控指标
         * [获取监控指标](/ulb/guide/ulbmonitor/getmonitoring)
 * 常见问题
-    * [ULB如何获取客户端的源地址？](/ulb/faq/sourceip)
-    * [服务节点收到大量内网IP的访问是否正常？](/ulb/faq/intranetip)
-    * [如何禁止某些源地址访问后端服务节点？](/ulb/faq/firewall)
-    * [轮询算法能否使所有服务节点请求数均衡？](/ulb/faq/pollingalgorithm)
-    * [ULB的会话保持是如何实现的？](/ulb/faq/session)
-    * [ULB服务器是否会宕机？](/ulb/faq/ulbserver)
-    * [对ULB压测时为何会出现连接失败？](/ulb/faq/pressuretest)
-    * [VServer的运行状态是指什么？](/ulb/faq/vserverstatus)
-    * [内网ULB的IP地址为何无法ping通？](/ulb/faq/ping)
-    * [ULB错误码有哪些？](/ulb/faq/errorcode)
-    * [连接空闲超时的原理？](/ulb/faq/idletimeout)
-    * [ULB健康检查机制是如何工作的？](/ulb/faq/ulbhealthcheck)
-    * [VServer端口和服务节点端口是否必须一致？](/ulb/faq/vserverport)
+   * 工作原理相关
+        * [ULB的会话保持是如何实现的？](/ulb/faq/session)
+        * [VServer的运行状态是指什么？](/ulb/faq/vserverstatus)
+        * [连接空闲超时的原理？](/ulb/faq/idletimeout)
+        * [ULB健康检查机制是如何工作的？](/ulb/faq/ulbhealthcheck)
+   * 使用相关
+        * [ULB如何获取客户端的源地址？](/ulb/faq/sourceip)
+        * [服务节点收到大量内网IP的访问是否正常？](/ulb/faq/intranetip)
+        * [如何禁止某些源地址访问后端服务节点？](/ulb/faq/firewall)
+        * [轮询算法能否使所有服务节点请求数均衡？](/ulb/faq/pollingalgorithm)
+        * [ULB服务器是否会宕机？](/ulb/faq/ulbserver)
+        * [ULB错误码有哪些？](/ulb/faq/errorcode)
+        * [VServer端口和服务节点端口是否必须一致？](/ulb/faq/vserverport)
+    * 测试相关
+        * [内网ULB的IP地址为何无法ping通？](/ulb/faq/ping)
+        * [对ULB压测时为何会出现连接失败？](/ulb/faq/pressuretest)
 * [词汇表](/ulb/_glossary)
 * [新功能发布记录](/ulb/newfunctions)    
 * API工具
