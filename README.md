@@ -24,7 +24,7 @@
         * [添加VServer](/ulb/guide/vserver/createvserver)
         * [删除VServer](/ulb/guide/vserver/deletevserver)
         * [更改VServer配置](/ulb/guide/vserver/editvserver)
-    * 服务节点
+    * jiedian
         * [添加服务节点](/ulb/guide/realserver/addrealserver)
         * [删除服务节点](/ulb/guide/realserver/deleterealserver)
         * [禁用服务节点](/ulb/guide/realserver/disablerealserver)
