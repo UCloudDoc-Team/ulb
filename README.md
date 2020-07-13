@@ -52,7 +52,7 @@
         * [连接空闲超时的原理？](/ulb/faq/idletimeout)
         * [ULB健康检查机制是如何工作的？](/ulb/faq/ulbhealthcheck)
     * 使用相关
-         * [ULB如何获取客户端的源地址？](/ulb/faq/sourceip)
+        * [ULB如何获取客户端的源地址？](/ulb/faq/sourceip)
         * [服务节点收到大量内网IP的访问是否正常？](/ulb/faq/intranetip)
         * [如何禁止某些源地址访问后端服务节点？](/ulb/faq/firewall)
         * [轮询算法能否使所有服务节点请求数均衡？](/ulb/faq/pollingalgorithm)
