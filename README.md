@@ -62,7 +62,7 @@
     * 测试相关
         * [内网ULB的IP地址为何无法ping通？](/ulb/faq/ping)
         * [对ULB压测时为何会出现连接失败？](/ulb/faq/pressuretest)
-* [名词解释](/ulb/_glossary)
+* [名词解释](/ulb/_glossary.md)
 * [新功能发布记录](/ulb/newfunctions)    
 * API工具
     * [UAPI简介](/ulb/api/uapi)  
