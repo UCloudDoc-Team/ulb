@@ -2,7 +2,7 @@
 
 ## ULB
 
-ULB服务实例，通过创建监听器（VServer），并将添加后端服务节点（RealServer），以实现流量均衡与服务容错的功能
+ULB服务实例，通过创建监听器（VServer），并将添加后端服务节点（RealServer），以实现流量均衡与服务容错的功能。
 ![](/images/同九，吾不及汝秀.jpg)
 
 ## VServer
