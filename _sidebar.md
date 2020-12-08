@@ -1,5 +1,3 @@
-<div class="sidebar_title icon__ulb"> 负载均衡 ULB</div>
-
 * [概览](/ulb/README)
 * 产品简介
     * [什么是ULB](/ulb/intro/whatisulb)
