@@ -14,6 +14,11 @@
 
 ![](/images/editulb02.png)
 
+2，点击资源ID旁边的盾牌图标，可前往查看全球清洗（即创建ULB时候选择的DDos攻击防护）详情。
+
+![](/images/go_to_uanycastclean.png)
+
+
 ### ULB概览页
 
 1，ULB列表页，选定需要修改的ULB实例。
