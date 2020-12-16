@@ -11,17 +11,12 @@
 
 3、填写配置信息，进行ULB实例创建。详细配置说明见下方。
 
-![](/images/createulb02.png)
+![](/images/createulb2.png)
 
 4，点击**立即购买**，即创建成功。
 
-![](/images/createulb03.png)
+![](/images/createulb3.png)
 
-DDos防护资源：
-
-![](/images/free_anycastclean.png)
-
-> 仅全球清洗支持地域可购买，每个账户赠送一个免费配额。
 
 ### 配置说明
 
@@ -35,7 +30,7 @@ DDos防护资源：
 |弹性IP(EIP)|选择外网后，需要配置外网弹性IP作为ULB对外提供服务的IP地址。可选择“新购”或“现有”外网弹性IP。|
 |计费方式|选择“新购”外网弹性IP时，需选择外网带宽的计费方式。可选带宽、流量、共享带宽等。详见[外网弹性IP-计费方式简介](https://docs.ucloud.cn/unet/eip/introduction)。|
 |带宽|选择“新购”外网IP时，需选择外网带宽值。|
-|DDos攻击防护|防护功能由全球清洗产品提供，在**海外宣告区域**支持对攻击流量进行分布式的清洗，可抵御百G级别的大流量攻击。点击超链查看对应内容：[控制台-全球清洗](https://console.ucloud.cn/anycastclean/manage?type=manage&id=true)，[文档-全球清洗](https://docs.ucloud.cn/uantiddos/uanycastclean/overview)，[文档-亚太和内地高防](https://docs.ucloud.cn/uantiddos/README)|
+|DDos攻击防护|防护功能由全球清洗产品提供，支持对攻击流量进行分布式的清洗，可抵御百G级别的大流量攻击。更多信息：[控制台-全球清洗](https://console.ucloud.cn/anycastclean/manage?type=manage&id=true)，[文档-全球清洗](https://docs.ucloud.cn/uantiddos/uanycastclean/overview)|
 |外网防火墙|外网模式下，可绑定外网防火墙进行访问控制。可选不绑定、绑定。|
 |实例名称|ULB实例名称。|
 |业务组|ULB所属的管理业务组。|
