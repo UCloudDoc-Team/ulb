@@ -17,6 +17,12 @@
 
 ![](/images/createulb03.png)
 
+DDos防护资源：
+
+![](/images/free_anycastclean.png)
+
+> 仅全球清洗支持地域可购买，每个账户赠送一个免费配额。
+
 ### 配置说明
 
 |配置|说明|
