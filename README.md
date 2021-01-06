@@ -4,7 +4,7 @@
 
 
 * 产品简介
-    * [什么是ULB.](/ulb/intro/whatisulb)
+    * [什么是ULB](/ulb/intro/whatisulb)
     * [产品功能](/ulb/intro/function)
     * [技术架构](/ulb/intro/architecture)
     * [性能指标](/ulb/intro/performance)
