@@ -14,6 +14,8 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 
 2，弹窗中进行以下选择。
 
+> 添加混合云混合云主机（即托管主机）时，托管VPC需要与ULB所在VPC联通。
+
 ![](https://static.ucloud.cn/9e30eac4e08b487c800e93d56b9f0f08.png)
 
 | 配置 | 说明 |
