@@ -30,6 +30,9 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 ![](/images/realserver-uhost.png)
 
 添加混合云主机：
+
+> 添加混合云主机时，ULB所在VPC须与混合云主机所在VPC联通
+
 ![](/images/realserver-hybrid.png)
 
 
