@@ -16,5 +16,5 @@ ULB的错误码基本是遵循HTTP的规范。
 * 500 Server Error：An internal server error occured.
 * 502 Bad Gateway：The server returned an invalid or incomplete response.
 * 503 Service Unavailable：No server is available to handle this request.
-* 504 Gateway Time-out：The server didn't respond in time.
+* 504 Gateway Time-out：The server didn't respond in time. 
 
