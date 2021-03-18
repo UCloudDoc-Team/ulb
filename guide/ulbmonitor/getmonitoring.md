@@ -8,10 +8,9 @@
 
 ### ULB监控
 
-1，进入概览页面，**外网ULB**会在显示绑定在ULB上EIP的详细和监控信息。
+1，进入概览页面，**外网ULB**会在显示绑定在ULB上EIP的详细信息和监控信息。
 
 ![](/images/ulbmonitor_new1.png)
-
 
 ### VServer监控
 
