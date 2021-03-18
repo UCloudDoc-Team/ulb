@@ -46,7 +46,8 @@
         * [更换防火墙](/ulb/guide/firewall/updatefirewall)
         * [解绑防火墙](/ulb/guide/firewall/unbindfirewall)
     * 日志管理
-        * [日志管理](/ulb/guide/log/log)
+        * [开启日志](/ulb/guide/log/openlog)
+        * [关闭日志](/ulb/guide/log/closelog)
     * 监控指标
         * [获取监控指标](/ulb/guide/ulbmonitor/getmonitoring)
 * 常见问题
