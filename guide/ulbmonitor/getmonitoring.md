@@ -14,7 +14,9 @@
 
 ### VServer监控
 
-1，进入VServer管理页面，选中VServer，右侧概览页面显示监控信息。
+进入VServer管理页面，选中VServer，右侧概览页面显示监控信息。
+
+不同类型VServer支持的监控指标如下：
 
 | 监控指标\VServer监听协议 | HTTPS | HTTP | TCP（请求代理）|TCP（报文转发）| UDP |指标说明|
 | --- | --- | --- | --- | --- | --- |--- |
