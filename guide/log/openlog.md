@@ -2,7 +2,9 @@
 
 ULB访问日志能够帮助你了解客户端的行为、地域分布，并提供访问路径信息，帮助排查故障。
 
-> 日志管理本身不收取费用，但日志需存储在US3中，需支付对应使用费用。[US3产品价格](https://docs.ucloud.cn/ufile/bill/billing)
+> 1、日志管理本身不收取费用，但日志需存储在US3中，需支付对应使用费用。[US3产品价格](https://docs.ucloud.cn/ufile/bill/billing)
+> 
+> 2、开启ULB日志后会有10%的性能损耗。
 
 ## 操作步骤
 
