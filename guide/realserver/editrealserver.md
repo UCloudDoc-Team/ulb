@@ -3,26 +3,20 @@
 “报文转发模式”下，由于用户访问会经ULB直接透传，必须保证访问地址落在后端真实服务节点上，所以要将负载均衡的内/外网IP地址配置在后端服务节点中。配置方法如下。
 
 
-### CentOS中的配置方法
+### CentOS/Ubuntu配置方法
 
-1、创建虚拟网卡配置文件
+| 操作系统       | 云主机未开启cloud init                                         | 云主机开启cloud init                                           |
+| -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| CentOS 7及以下 | 1、创建虚拟网卡配置文件：<br>```touch /etc/sysconfig/network-scripts/ifcfg-lo:1``` <br>2，在/etc/sysconfig/network-scripts/ifcfg-lo:1增加以下配置：（若ULB绑定多个EIP，则多个EIP均需要配置）<br>```DEVICE=lo:1```<br>```IPADDR=$VIP```<br>```NETMASK=255.255.255.255```<br>3、启动虚拟网卡：<br>```ifup lo:1``` | 1，创建虚拟网卡配置文件：<br/>```touch /etc/sysconfig/network-scripts/ifcfg-lo:1``` <br/>2，UserData中添加以下内容：[UserData说明](https://docs.ucloud.cn/uhost/guide/metadata/userdata)<br/>```#/bin/bash```<br/> ```echo -e "DEVICE=lo:1\nIPADDR=¥VIP\nNETMASK=255.255.255.255"  > /etc/sysconfig/network-scripts/ifcfg-lo:1```<br/>```ifup lo:1``` |
+| CentOS 8及以上 | 1、安装network-scripts：<br>```yum install network-scripts -y```<br>2，创建虚拟网卡配置文件：<br>```touch /etc/sysconfig/network-scripts/ifcfg-lo:1``` <br>3，在/etc/sysconfig/network-scripts/ifcfg-lo:1增加以下配置：（若ULB绑定多个EIP，则多个EIP均需要配置）<br>```DEVICE=lo:1```<br>```IPADDR=$VIP```<br>```NETMASK=255.255.255.255``` <br>4、启动虚拟网卡<br>```ifup lo:1``` | 1、安装network-scripts：<br/>```yum install network-scripts -y```<br/>2，创建虚拟网卡配置文件：<br/>```touch /etc/sysconfig/network-scripts/ifcfg-lo:1``` <br/>3，UserData中添加以下内容：[UserData说明](https://docs.ucloud.cn/uhost/guide/metadata/userdata)<br/>```#/bin/bash```<br/> ```echo -e "DEVICE=lo:1\nIPADDR=$VIP\nNETMASK=255.255.255.255"  > /etc/sysconfig/network-scripts/ifcfg-lo:1```<br/>```ifup lo:1``` |
+| Ubuntu         | 1，在/etc/network/interfaces中追加以下配置：<br>```auto lo:1```<br>```iface lo:1 inet static```<br>```address $VIP```<br>```netmask 255.255.255.255```<br />2、启动虚拟网卡<br/>```ifup lo:1``` | 3，UserData中添加以下内容：[UserData说明](https://docs.ucloud.cn/uhost/guide/metadata/userdata)<br/>```#/bin/bash```<br/> ```echo -e "DEVICE=lo:1\nIPADDR=$VIP\nNETMASK=255.255.255.255" >> /etc/network/interfaces```<br/>```ifup lo:1``` |
 
-```
-# touch /etc/sysconfig/network-scripts/ifcfg-lo:1
-```
+#### 获取网卡VIP
 
-注意，如果使用的系统版本为CentOS 8.0及以上，那么需要首先安装network-scripts:
-
-```
-# yum install network-scripts -y
-```
-
-2、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
-
-内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。
+1，内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。
 ![](/images/%E8%8E%B7%E5%8F%96vip.png)
 
-外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
+2，外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
 ![](/images/ulb-vip.png)
 
 如果您使用自动化脚本配置，我们建议您使用我们的API describe\_ulb获取您配置所需的VIP。如何调用此API请参考：
@@ -30,54 +24,7 @@
 [获取负载均衡信息-DescribeULB](https://docs.ucloud.cn/api/ulb-api/describe_ulb)
 
 
-3、将命令中得到的内容添加进"/etc/sysconfig/network-scripts/ifcfg-lo:1"中，若ULB绑定多个EIP，则多个EIP均需要配置。即如下内容：
-
-```
-DEVICE=lo:1
-IPADDR=$VIP
-NETMASK=255.255.255.255
-```
-
-4、启动虚拟网卡
-
-```
-# ifup lo:1
-```
-
-### Ubuntu中的配置方法
-
-1、获取网卡VIP，可在管理控制台概览页查看到ULB的IP。
-
-内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。
-![](/images/%E8%8E%B7%E5%8F%96vip.png)
-
-外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
-![](/images/ulb-vip.png)
-
-若使用自动化脚本配置，可使用API describe\_ulb获取服务IP地址。如何调用此API请参考：
-
-[获取负载均衡信息-DescribeULB](https://docs.ucloud.cn/api/ulb-api/describe_ulb)
-
-内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。
-
-2、将命令中得到的内容添加进"/etc/network/interfaces"中，即如下内容：
-
-```
-auto lo:1
-iface lo:1 inet static
-address $VIP
-netmask 255.255.255.255
-```
-
-在Ubuntu系统中，/etc/network/interfaces文件本身存在内容，请勿清空。
-
-3、启动虚拟网卡
-
-```
-# ifup lo:1
-```
-
-### Windows中的配置方法
+### Windows配置方法
 
 1、添加lo接口
 
