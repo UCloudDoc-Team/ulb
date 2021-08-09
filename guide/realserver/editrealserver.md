@@ -5,7 +5,7 @@
 
 ### CentOS/Ubuntu配置方法
 
-| 操作系统                     | 云主机未使用cloud init                                       | 云主机未使用cloud init                                       |
+| 操作系统                     | 云主机未使用cloud init                                       | 云主机使用cloud init                                       |
 | ---------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | CentOS 7及以下               | 1、创建虚拟网卡配置文件：<br>```touch /etc/sysconfig/network-scripts/ifcfg-lo:1``` <br>2、在/etc/sysconfig/network-scripts/ifcfg-lo:1增加以下配置：（若ULB绑定多个EIP，则多个EIP均需要配置）<br>```DEVICE=lo:1```<br>```IPADDR=$VIP```<br>```NETMASK=255.255.255.255```<br>3、启动虚拟网卡：<br>```ifup lo:1``` | UserData中添加以下内容：[UserData说明](https://docs.ucloud.cn/uhost/guide/metadata/userdata)<br/>```#/bin/bash```<br/> ```echo -e "DEVICE=lo:1\nIPADDR=$VIP\nNETMASK=255.255.255.255"  > /etc/sysconfig/network-scripts/ifcfg-lo:1```<br/>```ifup lo:1``` |
 | CentOS 8及以上               | 1、安装network-scripts：<br>```yum install network-scripts -y```<br>2、创建虚拟网卡配置文件：<br>```touch /etc/sysconfig/network-scripts/ifcfg-lo:1``` <br>3、在/etc/sysconfig/network-scripts/ifcfg-lo:1增加以下配置：（若ULB绑定多个EIP，则多个EIP均需要配置）<br>```DEVICE=lo:1```<br>```IPADDR=$VIP```<br>```NETMASK=255.255.255.255``` <br>4、启动虚拟网卡<br>```ifup lo:1``` | UserData中添加以下内容：[UserData说明](https://docs.ucloud.cn/uhost/guide/metadata/userdata)<br/>```#!/bin/bash```<br/>```yum install network-scripts -y```<br/> ```echo -e "DEVICE=lo:1\nIPADDR=$VIP\nNETMASK=255.255.255.255"  > /etc/sysconfig/network-scripts/ifcfg-lo:1```<br/>```ifup lo:1``` |
