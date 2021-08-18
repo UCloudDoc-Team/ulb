@@ -16,6 +16,7 @@
 ### 获取网卡VIP
 
 1，内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。如果您使用自动化脚本配置，我们建议您使用我们的API describe\_ulb获取您配置所需的VIP。如何调用此API请参考：[获取负载均衡信息-DescribeULB](https://docs.ucloud.cn/api/ulb-api/describe_ulb)
+
 ![](/images/%E8%8E%B7%E5%8F%96vip.png)
 
 ![](/images/ulb-vip.png)
