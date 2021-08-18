@@ -17,14 +17,16 @@
 
 1，内网ULB时，这里的$VIP即为负载均衡器的内网服务IP地址。外网ULB时，即为负载均衡器的外网服务IP地址（即EIP）。如果您使用自动化脚本配置，我们建议您使用我们的API describe\_ulb获取您配置所需的VIP。如何调用此API请参考：[获取负载均衡信息-DescribeULB](https://docs.ucloud.cn/api/ulb-api/describe_ulb)
 
+
 ![](/images/%E8%8E%B7%E5%8F%96vip.png)
+
 
 ![](/images/ulb-vip.png)
 
 
 ## Windows配置方法
 
-### 1、添加lo接口
+#### 1、添加lo接口
 
 依次在“设备管理器”中选择"网络适配器"，并在菜单栏中点击“操作”→“添加过时硬件”→“安装我从手动列表安装的硬件”。并在厂商中选择"Microsoft"，网络适配器选择“Microsoft Loopback Adapter”（注意在windows8、windows server2012及更新版本中，“Microsoft Loopback Adapter”更名为“Microsoft KM-TEST 环回适配器”）。并点击下一步完成设备创建。
 
@@ -32,7 +34,7 @@
 
 ![](/images/windows2.png)
 
-### 2、配置lo接口
+#### 2、配置lo接口
 
 内网ULB时，lo接口的IP即为负载均衡器的内网服务IP地址。外网ULB时，lo接口的IP为负载均衡器的外网服务IP地址（即EIP）。然后在“网络和共享中心”中，选择更改适配器设置，并配置lo接口，配置内容如图片所示：
 
