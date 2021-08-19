@@ -31,8 +31,8 @@
 
 > 注意在windows8、windows server2012及更新版本中，“Microsoft Loopback Adapter”更名为“Microsoft KM-TEST 环回适配器”。
 
-![](/images/windows1-1.png)
-![](/images/windows2-1.png)
+![](/images/windows1-2.png)
+![](/images/windows2-2.png)
 
 ### 第2步：配置lo接口
 
@@ -44,7 +44,7 @@
 
 ![](/images/ULB外网截图.png)
 
-![](/images/windows3-1.png)
+![](/images/windows3-2.png)
 
 ### 第3步：激活lo接口
 
@@ -60,7 +60,7 @@ Pause
 
 执行效果见下图。
 
-![](/images/win4-1.png)
+![](/images/win4-2.png)
 
 > 建议配置windows系统时通过VNC登陆进行操作，如以上操作未生效，可在执行完"netsh"后重启网卡或服务进行查看。本质上讲，无论后端服务实例是何种操作系统，只要将负载均衡器的VIP配置到后端服务实例上即可。
 
