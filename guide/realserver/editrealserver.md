@@ -64,5 +64,3 @@ Pause
 ![](/images/win4-2.png)
 
 
-
-
