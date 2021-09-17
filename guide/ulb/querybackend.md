@@ -6,4 +6,4 @@
 
 2、在搜索框内输入服务节点资源的内网IP，即可查询到服务节点所属的ULB和VServer信息，点击即可跳转到对应实例的详情页面。
 
-![](/images/QueryBackend1.png)
+![](/images/QueryBackend2.png)
