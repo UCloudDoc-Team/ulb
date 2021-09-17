@@ -18,6 +18,7 @@
         * [删除ULB](/ulb/guide/ulb/deleteulb)
         * [编辑ULB](/ulb/guide/ulb/editulb)
         * [绑定/解绑EIP](/ulb/guide/ulb/eip)
+        * [服务节点查询](/ulb/guide/ulb/querybackend)
     * VServer
         * [添加VServer](/ulb/guide/vserver/createvserver)
         * [删除VServer](/ulb/guide/vserver/deletevserver)
