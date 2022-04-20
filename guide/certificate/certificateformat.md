@@ -18,12 +18,25 @@
 -----END MY CERTIFICATE-----
 ```
 
-* 必选，私钥文件（key文件），文件的文本格式如下：
+* 必选，私钥文件（key文件）
+
+数字签名算法为RSA的文件的文本格式如下：
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
 ... 
 -----END RSA PRIVATE KEY-----
+```
+
+数字签名算法为ECDSA的文件的文本格式如下，EC PARAMETERS为可选：
+
+```
+-----BEGIN EC PARAMETERS-----
+... 
+-----END EC PARAMETERS-----
+-----BEGIN EC PRIVATE KEY-----
+... 
+-----END EC PRIVATE KEY-----
 ```
 
 * 可选，中间证书、根证书（证书链，cer/crt/pem格式），文件的文本格式如下：
@@ -41,12 +54,28 @@
 
 ### 手动填写证书
 
-如果您选择手动填写证书，则文本需要依次包含以下字段：私钥、网站证书、中间证书、根证书等，格式参考如下（在复制时请核对证书的完整性）：
+如果您选择手动填写证书，则文本需要依次包含以下字段：私钥、网站证书、中间证书、根证书等。
+
+数字签名算法为RSA格式参考如下（在复制时请核对证书的完整性）：
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
 ... 
 -----END RSA PRIVATE KEY-----
+-----BEGIN MY CERTIFICATE-----
+...
+-----END MY CERTIFICATE-----
+-----BEGIN MY CERTIFICATE-----
+...
+-----END MY CERTIFICATE-----
+```
+
+数字签名算法为ECDSA格式参考如下（在复制时请核对证书的完整性）：
+
+```
+-----BEGIN EC PRIVATE KEY-----
+... 
+-----END EC PRIVATE KEY-----
 -----BEGIN MY CERTIFICATE-----
 ...
 -----END MY CERTIFICATE-----
@@ -61,5 +90,6 @@ DER转PEM：
 
 证书转化：openssl x509 -inform der -in certificate.cer -out certificate.pem 
 
-私钥转化：openssl rsa -inform DER -outform PEM -in privatekey.der -out privatekey.pem
+私钥转化（RSA证书）：openssl rsa -inform DER -outform PEM -in privatekey.der -out privatekey.pem
 
+私钥转化（ECDSA证书）：openssl ec -inform DER -outform PEM -in privatekey.der -out privatekey.pem
