@@ -45,6 +45,9 @@
     * 日志管理
         * [开启日志](/ulb/guide/log/openlog)
         * [关闭日志](/ulb/guide/log/closelog)
+    * 数据压缩
+        * [开启数据压缩](/ulb/guide/datacompression/opendatacompression)
+        * [关闭数据压缩](/ulb/guide/datacompression/closedatacompression)
     * 监控指标
         * [获取监控指标](/ulb/guide/ulbmonitor/getmonitoring)
 * 常见问题
