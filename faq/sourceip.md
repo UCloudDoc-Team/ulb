@@ -6,7 +6,7 @@ ULB支持报文转发、请求代理两种类型。报文转发型支持TCP、UD
 
 报文转发模式下，后端服务节点收到的请求的源地址就是实际的源地址。
 
-请求代理模式下，HTTP协议中，ULB已经默认开启了x-Forwarded-For、X-Forwarded-Proto和X-Forward-SrcPort选项，可以从HTTP报头中中获取客户端的源地址、客户端与负载均衡之间的应用层协议和客户端端口。TCP协议无法返回源地址。
+请求代理模式下，HTTP/HTTPS协议中，ULB已经默认在报文头中添加了X-Forwarded-For、X-Forwarded-Proto和X-Forwarded-SrcPort，可以分别对应获取客户端的源地址、客户端与负载均衡之间的应用层协议和客户端端口。TCP协议无法返回源地址。
 
 
 ### 获取客户端源地址：
