@@ -42,6 +42,8 @@
         * [使用证书](/ulb/guide/certificate/use)
         * [更换证书](/ulb/guide/certificate/replacecertificate)
         * [删除证书](/ulb/guide/certificate/deletecertificate)
+    * 安全策略
+        * [安全策略说明](/ulb/guide/securitypolicy/securitypolicy)
     * 外网防火墙
         * [绑定防火墙](/ulb/guide/firewall/bindfirewall)
         * [更换防火墙](/ulb/guide/firewall/updatefirewall)
