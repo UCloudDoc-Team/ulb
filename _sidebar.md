@@ -40,6 +40,10 @@
         * [删除证书](/ulb/guide/certificate/deletecertificate)
     * 安全策略
         * [安全策略说明](/ulb/guide/securitypolicy/securitypolicy)
+        * [创建安全策略](/ulb/guide/securitypolicy/addsecuritypolicy)
+        * [编辑安全策略](/ulb/guide/securitypolicy/editsecuritypolicy)
+        * [绑定/解绑安全策略](/ulb/guide/securitypolicy/usesecuritypolicy)
+        * [删除安全策略](/ulb/guide/securitypolicy/deletesecuritypolicy)
     * 外网防火墙
         * [绑定防火墙](/ulb/guide/firewall/bindfirewall)
         * [更换防火墙](/ulb/guide/firewall/updatefirewall)
