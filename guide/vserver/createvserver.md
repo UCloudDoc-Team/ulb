@@ -6,9 +6,9 @@
 
 ULB实例创建完成后，可点击**详情**进入**VServer管理页面**添加VServer。
 
-1，在VServer管理页面中点击**添加VServer**。
+1、在VServer管理页面中点击**添加VServer**。
 
-2，填写配置信息，进行VServer创建。详细配置说明见下方。
+2、填写配置信息，进行VServer创建。详细配置说明见下方。
 
 ![](/images/vserver%E5%BB%BA%E7%AB%8Btcp.png)
 

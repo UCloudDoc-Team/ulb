@@ -8,11 +8,11 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 
 进入**VServer管理页面**，点击**服务节点**，进行服务节点管理。
 
-1，VServer管理-服务节点页面，点击**添加节点**。
+1、VServer管理-服务节点页面，点击**添加节点**。
 
 ![](https://static.ucloud.cn/db3e5c210e184820bf3263813620d2bb.png)
 
-2，弹窗中进行以下选择。
+2、弹窗中进行以下选择。
 
 ![](https://static.ucloud.cn/9e30eac4e08b487c800e93d56b9f0f08.png)
 
@@ -26,7 +26,7 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 
 > 添加混合云（托管云）资源时，托管云VPC要和ULB所在VPC做联通。
 
-3，在可选资源列表中，选中需要添加资源的**勾选框**，并移入右侧带添加节点列表中。
+3、在可选资源列表中，选中需要添加资源的**勾选框**，并移入右侧带添加节点列表中。
 
 添加云主机/物理云主机/容器/托管Hadoop集群，填写端口后再进行资源选择：
 ![](/images/realserver-uhost.png)
@@ -35,7 +35,7 @@ VServer监听器创建完毕后，需要为VServer添加服务节点，才可使
 ![](/images/realserver-hybrid.png)
 
 
-4，点击**确定**即完成节点添加。
+4、点击**确定**即完成节点添加。
 
 ![](https://static.ucloud.cn/ca55ac7d3cec46c281c409093303c787.png)
 
