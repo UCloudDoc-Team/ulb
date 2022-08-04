@@ -57,9 +57,11 @@
 > - security-tls12o，仅TLS版本改动，最低版本1.2
 > - security-tls11o，仅TLS版本改动，最低版本1.1
 >
-> 3、预定义策略中安全性高的策略，其支持的加密套件在ULB的环境中，等同于语法 `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE:!RSA`。
+> 3、预定义策略中安全性高的策略，其支持的加密套件在ULB的环境中，等同于语法
+> `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE:!RSA`
 >
-> 4、预定义策略中安全性中的策略，其支持的加密套件在ULB的环境中，等同于语法 `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE`。
+> 4、预定义策略中安全性中的策略，其支持的加密套件在ULB的环境中，等同于语法
+> `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE`
 
 ## 自定义策略
 
