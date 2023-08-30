@@ -3,7 +3,6 @@
 * 应用型负载均衡ALB
   * 产品简介
     * [产品介绍](/ulb/alb/intro/whatisalb)
-    * [产品优势](/ulb/alb/intro/advantages)
     * [产品功能](/ulb/alb/intro/function)
     * [技术架构](/ulb/alb/intro/architecture)
     * [性能指标](/ulb/alb/intro/performance)
