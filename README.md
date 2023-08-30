@@ -20,7 +20,7 @@
     * [回收策略](/ulb/alb/buy/recyle)
 * 传统型负载均衡CLB
   * 产品简介
-    * [什么是ULB](/ulb/intro/whatisulb)
+    * [产品简介](/ulb/intro/whatisulb)
     * [产品功能](/ulb/intro/function)
     * [技术架构](/ulb/intro/architecture)
     * [性能指标](/ulb/intro/performance)
@@ -28,7 +28,7 @@
   * 购买指南
     * [产品定价](/ulb/fast/price)
     * 产品选型
-        * [ULB：负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
+        * [CLB实例：负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
         * [VServer：监听器协议](/ulb/fast/createulb/vservertype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
       
