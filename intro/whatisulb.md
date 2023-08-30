@@ -1,18 +1,18 @@
-# 什么是ULB
+# 产品简介
 
-## ULB简介
+## 传统型负载均衡CLB
 
-ULB（UCloud Load Balancer）是UCloud提供的负载均衡服务，能够为多个主机或其它服务实例提供基于网络报文或代理方式的流量分发功能。在高并发服务环境下，通过ULB构建由多个服务节点组成的**服务集群**。**服务集群**能够扩展服务的处理及容错能力，并自动消除由于单一服务节点故障对服务整体的影响，提高服务的可用性。
+原负载均衡ULB更名为传统型负载均衡CLB，且CLB实例性能上限不再进行保证。
 
-ULB针对七层协议支持HTTP、HTTPS协议（类Nginx或HAproxy）；四层协议支持TCP协议及UDP协议（类LVS）。
+传统型负载均衡CLB（Classic Load Balancer）为共享型负载均衡实例，支持报文转发型和请求代理型，具备基础的四层、七层业务报文处理能力。
 
-## ULB组成
+请求代理类型支持支持HTTP、HTTPS协议；报文转发类型支持TCP协议及UDP协议。
 
-ULB服务主要由以下三个部分构成：
+## CLB组成
 
-* ULB服务实例（UCloud LoadBalancer）：用来接收流量并进行流量分发。
-* 虚拟服务器／监听器（VServer）：监听器，每个VServer是一组负载均衡前端端口配置。
-* 服务节点（RealServer／Backend）：后端真实处理请求的云资源。
+CLB服务主要由以下三个部分构成：
 
-![](https://static.ucloud.cn/4f99935ea27846559c12661ac55d34f1.png)
+* CLB服务实例：用来接收流量并进行流量分发。
+* 虚拟服务器（VServer）：监听器，每个VServer是一组负载均衡前端端口配置。
+* 服务节点（RealServer）：后端真实处理请求的云资源。
 
