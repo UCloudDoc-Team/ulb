@@ -5,9 +5,9 @@
 
 负载均衡ULB产品族包含：应用型负载均衡ALB、传统型负载均衡CLB。网络型负载均衡NLB即将上线。
 
-* [产品动态](ulb/releasenotes)
-  * [新功能发布记录](ulb/newfunctions)
-  * [产品更名通知](ulb/updates)    
+* 产品动态
+  * [新功能发布记录](ulb/releasenotes/newfunctions)
+  * [产品更名通知](ulb/releasenotes/updates)    
 * 应用型负载均衡ALB
   * 产品简介
     * [产品介绍](/ulb/alb/intro/whatisalb)
