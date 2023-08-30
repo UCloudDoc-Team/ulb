@@ -10,51 +10,7 @@
   * 计费说明
     * [产品定价](/ulb/alb/buy/charge)
     * [回收策略](/ulb/alb/buy/recyle)
-  * 操作指南
-    * ALB
-      * [创建ALB](/ulb/alb/guide/albinstance/createalb)
-      * [删除ALB](/ulb/alb/guide/albinstance/deletealb)
-      * [编辑ALB](/ulb/alb/guide/albinstance/editalb)
-      * [绑定/解绑EIP](/ulb/alb/guide/albinstance/eip)
-    * 监听器
-      * [添加监听器](/ulb/alb/guide/listener/creatlistener)
-      * [删除监听器](/ulb/alb/guide/listener/deletelistener)
-      * [更改监听器配置](/ulb/alb/guide/listener/editlistener)
-    * 服务节点
-      * [添加服务节点](/ulb/alb/guide/targets/addtargets)
-      * [删除服务节点](/ulb/alb/guide/targets/deletetargets)
-      * [禁用服务节点](/ulb/alb/guide/targets/disabletargets)
-    * 内容转发
-      * [添加内容转发规则](/ulb/alb/guide/rule/addrule)
-      * [删除内容转发规则](/ulb/alb/guide/rule/deleterule)
-      * [管理内容转发规则](/ulb/alb/guide/rule/editrule)
-    * 证书
-      * [证书格式](/ulb/alb/guide/certificate/certificateformat)
-      * [添加证书](/ulb/alb/guide/certificate/addcertificate)
-      * [使用证书](/ulb/alb/guide/certificate/use)
-      * [更换证书](/ulb/alb/guide/certificate/replacecertificate)
-      * [删除证书](/ulb/alb/guide/certificate/deletecertificate)
-    * 安全策略
-      * [安全策略说明](/ulb/alb/guide/securitypolicy/securitypolicy)
-      * [创建安全策略](/ulb/alb/guide/securitypolicy/addsecuritypolicy)
-      * [编辑安全策略](/ulb/alb/guide/securitypolicy/editsecuritypolicy)
-      * [绑定/解绑安全策略](/ulb/alb/guide/securitypolicy/usesecuritypolicy)
-      * [删除安全策略](/ulb/alb/guide/securitypolicy/deletesecuritypolicy)
-    * 外网防火墙
-      * [绑定防火墙](/ulb/alb/guide/firewall/bindfirewall)
-      * [更换防火墙](/ulb/alb/guide/firewall/updatefirewall)
-      * [解绑防火墙](/ulb/alb/guide/firewall/unbindfirewall)
-    * 日志管理
-      * [开启日志](/ulb/alb/guide/log/openlog)
-      * [关闭日志](/ulb/alb/guide/log/closelog)
-    * 数据压缩
-      * [开启数据压缩](/ulb/alb/guide/datacompression/opendatacompression)
-      * [关闭数据压缩](/ulb/alb/guide/datacompression/closedatacompression)
-    * 监控指标
-      * [获取监控指标](/ulb/alb/guide/monitor/getmonitoring)
-      * [绑定监控模板](/ulb/alb/guide/monitor/bindalarmtemplate)
-  * 常见问题
-    * 工作原理相关
+ 
 * 传统型负载均衡CLB
   * 产品简介
     * [什么是ULB](/ulb/intro/whatisulb)
@@ -131,7 +87,7 @@
   * [新功能发布记录](ulb/releasenotes/newfunctions)
   * [产品更名通知](ulb/releasenotes/updates)    
 * API工具
-    * [UAPI简介](/ulb/api/uapi)  
+    * [UAPI简介](/ulb/api/uapi)
     
     
         
