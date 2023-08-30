@@ -17,7 +17,7 @@
     * [使用限制](/ulb/alb/intro/limit)
   * 计费说明
     * [产品定价](/ulb/alb/buy/charge)
-    * [回收策略](/ulb/alb/bug/recyle)
+    * [回收策略](/ulb/alb/buy/recyle)
 * 传统型负载均衡CLB
   * 产品简介
     * [什么是ULB](/ulb/intro/whatisulb)
