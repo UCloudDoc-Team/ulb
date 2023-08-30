@@ -127,7 +127,7 @@
       * [内网报文转发ULB的IP地址为何无法ping通？](/ulb/faq/ping)
       * [对ULB压测时为何会出现连接失败？](/ulb/faq/pressuretest)
   * [词汇表](/ulb/glossary)    
-* [产品动态]
+* 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
   * [产品更名通知](ulb/releasenotes/updates)    
 * API工具
