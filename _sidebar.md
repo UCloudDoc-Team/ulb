@@ -15,7 +15,7 @@
       * [创建ALB](/ulb/alb/guide/albinstance/createalb)
       * [删除ALB](/ulb/alb/guide/albinstance/deletealb)
       * [编辑ALB](/ulb/alb/guide/albinstance/editalb)
-      * [绑定/解绑EIP](/ulb/guide/albinstance/eip)
+      * [绑定/解绑EIP](/ulb/alb/guide/albinstance/eip)
     * 监听器
       * [添加监听器](/ulb/alb/guide/listener/creatlistener)
       * [删除监听器](/ulb/alb/guide/listener/deletelistener)
