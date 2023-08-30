@@ -7,7 +7,6 @@
 
 * 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
-  * [产品更名通知](ulb/releasenotes/updates)    
 * 应用型负载均衡ALB
   * 产品简介
     * [产品介绍](/ulb/alb/intro/whatisalb)
