@@ -85,7 +85,6 @@
   * [词汇表](/ulb/glossary)    
 * 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
-  * [产品更名通知](ulb/releasenotes/updates)    
 * API工具
     * [UAPI简介](/ulb/api/uapi)
     
