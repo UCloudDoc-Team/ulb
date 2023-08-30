@@ -17,14 +17,13 @@
       * [编辑ALB](/ulb/guide/albinstance/editalb)
       * [绑定/解绑EIP](/ulb/guide/albinstance/eip)
     * 监听器
-      * [添加监听器](/ulb/alb/guide/vserver/creatlistener)
-      * [删除监听器](/ulb/alb/guide/vserver/deletelistener)
-      * [更改监听器配置](/ulb/alb/guide/vserver/editlistener)
+      * [添加监听器](/ulb/alb/guide/listener/creatlistener)
+      * [删除监听器](/ulb/alb/guide/listener/deletelistener)
+      * [更改监听器配置](/ulb/alb/guide/listener/editlistener)
     * 服务节点
       * [添加服务节点](/ulb/alb/guide/targets/addtargets)
       * [删除服务节点](/ulb/alb/guide/targets/deletetargets)
       * [禁用服务节点](/ulb/alb/guide/targets/disabletargets)
-      * [报文转发模式服务节点配置](/ulb/alb/guide/targets/edittargets)
     * 内容转发
       * [添加内容转发规则](/ulb/alb/guide/rule/addrule)
       * [删除内容转发规则](/ulb/alb/guide/rule/deleterule)
@@ -52,11 +51,10 @@
       * [开启数据压缩](/ulb/alb/guide/datacompression/opendatacompression)
       * [关闭数据压缩](/ulb/alb/guide/datacompression/closedatacompression)
     * 监控指标
-      * [获取监控指标](/ulb/alb/guide/ulbmonitor/getmonitoring)
-      * [绑定监控模板](/ulb/alb/guide/ulbmonitor/bindmonitoringtemplate)
+      * [获取监控指标](/ulb/alb/guide/monitor/getmonitoring)
+      * [绑定监控模板](/ulb/alb/guide/monitor/bindalarmtemplate)
   * 常见问题
     * 工作原理相关
-  * [词汇表](/ulb/alb/glossary)    
 * 传统型负载均衡CLB
   * 产品简介
     * [什么是ULB](/ulb/intro/whatisulb)
