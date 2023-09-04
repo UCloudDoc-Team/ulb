@@ -21,8 +21,7 @@
   * 购买指南
     * [产品定价](/ulb/fast/price)
     * 产品选型
-        * [CLB实例：负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
-        * [VServer：监听器协议](/ulb/fast/createulb/vservertype)
+        * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
   * 操作指南
     * CLB
