@@ -23,7 +23,6 @@
     * 产品选型
         * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
-        * [健康检查](/ulb/fast/createulb/ulbhealthcheck)
   * 操作指南
     * CLB
       * [CLB](/ulb/guide/ulb/createulb)
