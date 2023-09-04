@@ -25,10 +25,7 @@
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
   * 操作指南
     * CLB
-      * [创建CLB](/ulb/guide/ulb/createulb)
-      * [删除CLB](/ulb/guide/ulb/deleteulb)
-      * [编辑CLB](/ulb/guide/ulb/editulb)
-      * [绑定/解绑EIP](/ulb/guide/ulb/eip)
+      * [CLB](/ulb/guide/ulb/createulb)
       * [服务节点查询](/ulb/guide/ulb/querybackend)
     * VServer
       * [添加VServer](/ulb/guide/vserver/createvserver)
