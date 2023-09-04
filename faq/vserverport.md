@@ -10,10 +10,10 @@
 3、配置规则：
 
 ```
-iptables -t nat -A PREROUTING –d $vip_ip -p tcp --dport $ulb4_port  -j DNAT --to-destination $vip_ip:$vm_port
+iptables -t nat -A PREROUTING –d $vip_ip -p tcp --dport $clb4_port  -j DNAT --to-destination $vip_ip:$vm_port
 ```
 
-其中：$vip\_ip指负载均衡器的内网服务IP地址，$ulb4\_port指CLB的监听端口，$vm\_port为后端服务器的监听端口 例：负载均衡器的内网服务IP地址为：10.10.10.10，CLB\_4监听端口为80，后端服务器监听端口为8101，则规则为：
+其中：$vip\_ip指负载均衡器的内网服务IP地址，$clb4\_port指CLB的监听端口，$vm\_port为后端服务器的监听端口 例：负载均衡器的内网服务IP地址为：10.10.10.10，CLB\_4监听端口为80，后端服务器监听端口为8101，则规则为：
 
 ```
 iptables -t nat -A PREROUTING -d 10.10.10.10 -p tcp --dport 80 -j DNAT --to-destination 10.10.10.10:8101
