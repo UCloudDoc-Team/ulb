@@ -22,7 +22,7 @@ ALB支持按时、按月、按年等计费周期。
 ## 带宽费用
 使用外网模式的ALB时，会收取EIP带宽费用，内网模式的ALB无带宽费用。
 EIP计费模式与ALB计费模式保持一致，支持按时、按月、按年等，带宽计费方式支持固定带宽、流量计费、共享带宽等，您可根据业务模型选择不同的计费方式。
-带宽费用详见[EIP收费说明](https://docs.ucloud.cn/unet/eip_price) 
+带宽费用详见[EIP收费说明](https://docs.ucloud.cn/unet/eip_price/compare) 
 
 ## 性能容量LCU费用
 当前为免费公测期间，LCU费用免费。
