@@ -30,9 +30,7 @@
       * [服务节点查询](/ulb/guide/ulb/querybackend)
     * [VServer](/ulb/guide/vserver/createvserver) 
     * 服务节点
-      * [添加服务节点](/ulb/guide/realserver/addrealserver)
-      * [删除服务节点](/ulb/guide/realserver/deleterealserver)
-      * [禁用服务节点](/ulb/guide/realserver/disablerealserver)
+      * [服务节点](/ulb/guide/realserver/addrealserver)
       * [报文转发模式服务节点配置](/ulb/guide/realserver/editrealserver)
     * 内容转发
       * [添加内容转发规则](/ulb/guide/forwardpolicy/addrule)
