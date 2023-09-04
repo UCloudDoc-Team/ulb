@@ -35,10 +35,7 @@
     * [内容转发](/ulb/guide/forwardpolicy/addrule)
     * 证书
       * [证书格式](/ulb/guide/certificate/certificateformat)
-      * [添加证书](/ulb/guide/certificate/addcertificate)
-      * [使用证书](/ulb/guide/certificate/use)
-      * [更换证书](/ulb/guide/certificate/replacecertificate)
-      * [删除证书](/ulb/guide/certificate/deletecertificate)
+      * [证书管理](/ulb/guide/certificate/addcertificate)
     * 安全策略
       * [安全策略说明](/ulb/guide/securitypolicy/securitypolicy)
       * [创建安全策略](/ulb/guide/securitypolicy/addsecuritypolicy)
