@@ -32,10 +32,7 @@
     * 服务节点
       * [服务节点](/ulb/guide/realserver/addrealserver)
       * [报文转发模式服务节点配置](/ulb/guide/realserver/editrealserver)
-    * 内容转发
-      * [添加内容转发规则](/ulb/guide/forwardpolicy/addrule)
-      * [删除内容转发规则](/ulb/guide/forwardpolicy/deleterule)
-      * [管理内容转发规则](/ulb/guide/forwardpolicy/editrule)
+    * [内容转发](/ulb/guide/forwardpolicy/addrule)
     * 证书
       * [证书格式](/ulb/guide/certificate/certificateformat)
       * [添加证书](/ulb/guide/certificate/addcertificate)
