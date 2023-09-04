@@ -1,12 +1,12 @@
 
 
-# ULB如何获取客户端的源地址？
+# 如何获取客户端的源地址？
 
-ULB支持报文转发、请求代理两种类型。报文转发型支持TCP、UDP等协议，请求代理型支持HTTP、HTTPS、TCP等协议。
+CLB支持报文转发、请求代理两种类型。报文转发型支持TCP、UDP等协议，请求代理型支持HTTP、HTTPS、TCP等协议。
 
 报文转发模式下，后端服务节点收到的请求的源地址就是实际的源地址。
 
-请求代理模式下，HTTP/HTTPS协议中，ULB已经默认在报文头中添加了X-Forwarded-For、X-Forwarded-Proto和X-Forwarded-SrcPort，可以分别对应获取客户端的源地址、客户端与负载均衡之间的应用层协议和客户端端口。TCP协议无法返回源地址。
+请求代理模式下，HTTP/HTTPS协议中，已经默认在报文头中添加了X-Forwarded-For、X-Forwarded-Proto和X-Forwarded-SrcPort，可以分别对应获取客户端的源地址、客户端与负载均衡之间的应用层协议和客户端端口。TCP协议无法返回源地址。
 
 
 ### 获取客户端源地址：
