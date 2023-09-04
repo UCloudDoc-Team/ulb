@@ -23,14 +23,12 @@
     * 产品选型
         * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
+        * [健康检查](/ulb/fast/createulb/ulbhealthcheck)
   * 操作指南
     * CLB
       * [CLB](/ulb/guide/ulb/createulb)
       * [服务节点查询](/ulb/guide/ulb/querybackend)
-    * VServer
-      * [添加VServer](/ulb/guide/vserver/createvserver)
-      * [删除VServer](/ulb/guide/vserver/deletevserver)
-      * [更改VServer配置](/ulb/guide/vserver/editvserver)
+    * [VServer](/ulb/guide/vserver/createvserver) 
     * 服务节点
       * [添加服务节点](/ulb/guide/realserver/addrealserver)
       * [删除服务节点](/ulb/guide/realserver/deleterealserver)
