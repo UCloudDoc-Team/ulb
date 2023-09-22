@@ -1,7 +1,7 @@
 # 产品简介
 
 ## 应用型负载均衡ALB简介
-应用型负载均衡ALB（Application Load Balancer），面向HTTP/HTTPS等应用层流量负载场景，提供更高处立性能，提供SSL卸载、自定义TLS算法、重定向、压缩等高级功能。
+应用型负载均衡ALB（Application Load Balancer），面向HTTP/HTTPS等应用层流量负载场景，提供更高处理性能，提供SSL卸载、自定义TLS算法、重定向、压缩等高级功能。
 
 ## 产品组成
 * ALB服务实例：面向HTTP/HTTPS等应用层流量负载场景，用来接收流量并进行流量分发。
