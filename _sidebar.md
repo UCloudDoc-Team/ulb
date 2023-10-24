@@ -63,7 +63,7 @@
       * [压测时为何会出现连接失败？](/ulb/faq/pressuretest)
 * 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
-  * [2023-9-27 【CLB产品调整公共】](ulb/releasenotes/updates)
+  * [2023-9-27 【CLB产品调整公告】](ulb/releasenotes/updates)
 * API工具
     * [UAPI简介](/ulb/api/uapi)
     
