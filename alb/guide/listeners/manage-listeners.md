@@ -10,9 +10,9 @@
    1. 在**实例列表**页面，在目标实例**操作**列点击**监听器管理**。
    2. 在**实例列表**页面，点击目标实例ID或者详情。在**监听器管理**页签，点击**添加监听**。
 
-![img](https://ucloud-llk.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGM4MDNkY2I5Zjg3ZGU1ZTEzNmM1YmE1MWM0NTNkODFfSXA0ZElYbGtCZ3NpbWphSFlITUI4M05YN1VNMXZaYzNfVG9rZW46T0FYQWJja25Ub09JdFR4czZ2emNnZEhvbmdiXzE3MTM4NTM0MTk6MTcxMzg1NzAxOV9WNA)
+![1713866179936](/images/1713866179936.png)
 
-1. 在**创建监听器**页面，完成以下配置，然后点击**确认**。
+4. 在**创建监听器**页面，完成以下配置，然后点击**确认**。
 
 | 配置项       | 说明                                                         |
 | :----------- | :----------------------------------------------------------- |
@@ -38,9 +38,9 @@
    1. 在**实例列表**页面，在目标实例**操作**列点击**监听器管理**。
    2. 在**实例列表**页面，点击目标实例ID或者详情。在**监听器管理**页签，点击**添加监听**。
 
-![img](https://ucloud-llk.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDQ3ZWQzOTVmYTczMzZjNjlhMzM3M2I5YjFjMWRmMDRfNmZ4Smk5cEVabWZnZVhRam1FZVZhaEVKVlN0RTFLeGlfVG9rZW46R1U4ZGJGbW9rb3p3ZHF4ckpjZGM0MHBmbm5rXzE3MTM4NTM0MTk6MTcxMzg1NzAxOV9WNA)
+![1713866215318](/images1713866215318.png)
 
-1. 在**创建监听器**页面，完成以下配置，然后点击**确认**。
+4. 在**创建监听器**页面，完成以下配置，然后点击**确认**。
 
 | 配置项       | 说明                                                         |
 | :----------- | :----------------------------------------------------------- |
@@ -66,11 +66,11 @@
 4. 点击**监听器管理**，找到目标监听，选择以下一种方法，修改监听基本信息。
    1. 点击目标监听，在**监听器详情**页签的**基本信息**区域，点击**更改配置**。
 
-![img](https://ucloud-llk.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU3YTk5MTZkOTM0NzU5OWFlZDIzMzQ3YWEwODYyZDlfc0JkdUF6R0xxRUZObVF1Z2VxOWw5WWJKYzlpeEpnQ2VfVG9rZW46SzBpN2JxSXpzb0IwRlN4NHpoVmNBR1JBbkplXzE3MTM4NTM0MTk6MTcxMzg1NzAxOV9WNA)
+![1713866278323](/images/1713866278323.png)
 
-- 在左侧监听器列表，选择需要编辑的监听器，点击右上角的编辑按钮，进入编辑页面
+​			2. 在左侧监听器列表，选择需要编辑的监听器，点击右上角的编辑按钮，进入编辑页面
 
-![img](https://ucloud-llk.feishu.cn/space/api/box/stream/download/asynccode/?code=NzFiYjhhOTdiODEyOGZhNjg5YzVlZTYyNWNlYzM0MzhfcjlocVVFOHJoRmhoaHgyMWZ2WUZveGdFUDJ6QkpkNWJfVG9rZW46VmpzUGJQZ1Zab2NGSjN4SHJZUGM3VXhibm9nXzE3MTM4NTM0MTk6MTcxMzg1NzAxOV9WNA)
+![1713866330274](/images/1713866330274.png)
 
 1. 在**编辑监听器**对话框中，您可以根据业务的需要修改监听器的配置信息，然后点击**保存，**即可完成对监听器的修改
 
@@ -81,8 +81,6 @@
 3. 在ALB**实例**页面，找到目标ALB实例，点击实例ID。
 4. 点击**监听器管理**页签，找到目标监听器，然后在右上角选择**删除**。
 
-![img](https://ucloud-llk.feishu.cn/space/api/box/stream/download/asynccode/?code=MWUyYjhkOGFhMjBiMGFmZmNlODg2YTA5MDVkNmVmNjlfNGRmdk5OaGRET2FRN3JvZlIwZ1Fwa2k4OEw5VVFVdXBfVG9rZW46VUd5M2JsUDd5bzZvclR4UXlMM2NEVEY5bkdlXzE3MTM4NTM0MTk6MTcxMzg1NzAxOV9WNA)
+![1713866368201](/images/1713866368201.png)
 
-![1713857446040](/images/1713857446040.png)
-
-1. 在弹出的删除监听器对话框中，点击**确定**。
+5. 在弹出的删除监听器对话框中，点击**确定**。
