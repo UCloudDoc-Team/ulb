@@ -35,6 +35,9 @@
     * 产品简介
       * [产品介绍](/ulb/NLB/intro/whatisalb)
       * [产品功能](/ulb/NLB/intro/function)
+    * 计费说明
+      * [产品定价](/ulb/NLB/buy/charge)
+      * [回收策略](/ulb/NLB/buy/recyle)
 
 * 传统型负载均衡CLB
   * 产品简介
@@ -93,6 +96,7 @@
 <<<<<<< HEAD
   * [2023-4-18 【ALB产品支持SNI功能】](ulb/releasenotes/alb-sni.md)
   
+
 =======
   * [2024-4-18 【ALB产品支持SNI功能】](ulb/releasenotes/alb-sni.md)
 >>>>>>> 237ca143c47e9da38351c60b4bdcde6843d7c82e
