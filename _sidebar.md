@@ -28,14 +28,6 @@
       * 日志
         *  [操作日志]( ulb/alb/guide/logs/audit-logs.md )
         *  [访问日志]( ulb/alb/guide/logs/access-logs.md )
-* 网络型负载均衡NLB
-
-    * 产品简介
-      * [产品介绍](/ulb/NLB/intro/whatisalb)
-      * [产品功能](/ulb/NLB/intro/function)
-    * 计费说明
-      * [产品定价](/ulb/NLB/buy/charge)
-      * [回收策略](/ulb/NLB/buy/recyle)
 * 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
