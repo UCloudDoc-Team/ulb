@@ -1,6 +1,6 @@
 
-* [概览](/ulb/README)
-* 应用型负载均衡ALB
+- [概览](/ulb/README)
+- 应用型负载均衡ALB
   * 产品简介
     * [产品介绍](/ulb/alb/intro/whatisalb)
     * [产品功能](/ulb/alb/intro/function)
@@ -28,7 +28,7 @@
       * 日志
         *  [操作日志]( ulb/alb/guide/logs/audit-logs.md )
         *  [访问日志]( ulb/alb/guide/logs/access-logs.md )
-* 传统型负载均衡CLB
+- 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
     * [产品功能](/ulb/intro/function)
@@ -78,11 +78,29 @@
     * 测试相关
       * [内网报文转发的IP地址为何无法ping通？](/ulb/faq/ping)
       * [压测时为何会出现连接失败？](/ulb/faq/pressuretest)
-* 产品动态
+- 网络型负载均衡NLB
+  * 产品简介
+    * [产品介绍](/ulb/NLB/intro/whatisnlb)
+    * [功能特性](/ulb/NLB/intro/function)
+    * [使用限制](/ulb/NLB/intro/limit)
+  * 计费说明
+    * [计费规则](/ulb/NLB/buy/charge)
+    * [回收策略](/ulb/NLB/buy/recyle)
+  * 操作指南
+    * 实例
+      * [创建和管理网络型负载均衡实例](/ulb/NLB/guide/instance/create-instance.md)
+    * 监听器
+      * [监听器概述](ulb/NLB/guide/listeners/whatlisteners.md)
+      * [监听器管理](ulb/NLB/guide/listeners/manage-listeners.md)
+      * [服务节点](ulb/NLB/guide/listeners/manage-node.md )
+    * [操作日志](ulb/NLB/guide/audit-logs.md)
+  * 最佳实践
+    * [使用NLB挂载跨地域VPC的服务节点](ulb/NLB/use/use-instance.md)
+- 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
   * [2023-9-27 【CLB产品调整公告】](ulb/releasenotes/updates)
   * [2023-4-18 【ALB产品支持SNI功能】](ulb/releasenotes/alb-sni.md)
-* API工具
+- API工具
 
   * [UAPI简介](/ulb/api/uapi)
 

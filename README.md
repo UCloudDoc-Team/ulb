@@ -47,8 +47,25 @@
     * 产品选型
         * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
-    
-
+  
+* 网络型负载均衡NLB
+  * 产品简介
+    * [产品介绍](/ulb/NLB/intro/whatisnlb)
+    * [功能特性](/ulb/NLB/intro/function)
+    * [使用限制](/ulb/NLB/intro/limit)
+  * 计费说明
+    * [计费规则](/ulb/NLB/buy/charge)
+    * [回收策略](/ulb/NLB/buy/recyle)
+  * 操作指南
+    * 实例
+      * [创建和管理网络型负载均衡实例](/ulb/NLB/guide/instance/create-instance.md)
+    * 监听器
+      * [监听器概述](ulb/NLB/guide/listeners/whatlisteners.md)
+      * [监听器管理](ulb/NLB/guide/listeners/manage-listeners.md)
+      * [服务节点](ulb/NLB/guide/listeners/manage-node.md )
+    * [操作日志](ulb/NLB/guide/audit-logs.md)
+  * 最佳实践
+    * [使用NLB挂载跨地域VPC的服务节点](ulb/NLB/use/use-instance.md)
 
 ​    
 ​    
