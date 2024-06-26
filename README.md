@@ -35,6 +35,8 @@
     * 日志
       *  [操作日志]( ulb/alb/guide/logs/audit-logs.md )
       *  [访问日志]( ulb/alb/guide/logs/access-logs.md )
+  * 最佳实践
+    * [使用ALB挂载跨域VPC的云服务器](ulb/alb/use/use-instance.md)
 * 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
@@ -47,7 +49,6 @@
     * 产品选型
         * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
         * [负载均衡算法](/ulb/fast/createulb/algorithm)
-  
 * 网络型负载均衡NLB
   * 产品简介
     * [产品介绍](/ulb/NLB/intro/whatisnlb)

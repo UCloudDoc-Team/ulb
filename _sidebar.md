@@ -28,6 +28,8 @@
       * 日志
         *  [操作日志]( ulb/alb/guide/logs/audit-logs.md )
         *  [访问日志]( ulb/alb/guide/logs/access-logs.md )
+  * 最佳实践
+        * [使用ALB挂载跨域VPC的云服务器](ulb/alb/use/use-instance.md)
 - 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
@@ -99,7 +101,8 @@
 - 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
   * [2023-9-27 【CLB产品调整公告】](ulb/releasenotes/updates)
-  * [2023-4-18 【ALB产品支持SNI功能】](ulb/releasenotes/alb-sni.md)
+  * [2024-4-18 【ALB产品支持SNI功能】](ulb/releasenotes/alb-sni.md)
+  * [2024-6-25 【ALB产品支持挂载跨域VPC云服务器】](ulb/releasenotes/alb-vpc.md)
 - API工具
 
   * [UAPI简介](/ulb/api/uapi)
