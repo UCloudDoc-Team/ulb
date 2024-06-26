@@ -29,7 +29,7 @@
         *  [操作日志]( ulb/alb/guide/logs/audit-logs.md )
         *  [访问日志]( ulb/alb/guide/logs/access-logs.md )
   * 最佳实践
-        * [使用ALB挂载跨域VPC的云服务器](ulb/alb/use/use-instance.md)
+    * [使用ALB挂载跨域VPC的云服务器](ulb/alb/use/use-instance.md)
 - 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
