@@ -37,23 +37,10 @@
       *  [访问日志]( ulb/alb/guide/logs/access-logs.md )
   * 最佳实践
     * [使用ALB挂载跨域VPC的云服务器](ulb/alb/use/use-instance.md)
-* 传统型负载均衡CLB
-  * 产品简介
-    * [产品简介](/ulb/intro/whatisulb)
-    * [产品功能](/ulb/intro/function)
-    * [技术架构](/ulb/intro/architecture)
-    * [性能指标](/ulb/intro/performance)
-    * [使用限制](/ulb/intro/limit)
-  * 购买指南
-    * [产品定价](/ulb/fast/price)
-    * 产品选型
-        * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
-        * [负载均衡算法](/ulb/fast/createulb/algorithm)
 * 网络型负载均衡NLB
   * 产品简介
     * [产品介绍](/ulb/NLB/intro/whatisnlb)
     * [功能特性](/ulb/NLB/intro/function)
-    * [使用限制](/ulb/NLB/intro/limit)
   * 计费说明
     * [计费规则](/ulb/NLB/buy/charge)
     * [回收策略](/ulb/NLB/buy/recyle)
@@ -67,6 +54,19 @@
     * [操作日志](ulb/NLB/guide/audit-logs.md)
   * 最佳实践
     * [使用NLB挂载跨地域VPC的服务节点](ulb/NLB/use/use-instance.md)
+* 传统型负载均衡CLB
+  * 产品简介
+    * [产品简介](/ulb/intro/whatisulb)
+    * [产品功能](/ulb/intro/function)
+    * [技术架构](/ulb/intro/architecture)
+    * [性能指标](/ulb/intro/performance)
+    * [使用限制](/ulb/intro/limit)
+  * 购买指南
+    * [产品定价](/ulb/fast/price)
+    * 产品选型
+        * [负载均衡类型/网络模式](/ulb/fast/createulb/networktype)
+        * [负载均衡算法](/ulb/fast/createulb/algorithm)
+
 
 ​    
 ​    
