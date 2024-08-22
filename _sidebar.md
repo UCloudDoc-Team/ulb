@@ -80,6 +80,9 @@
       * [关闭日志](/ulb/guide/log/closelog)
     * 监控指标
       * [获取监控指标](/ulb/guide/ulbmonitor/getmonitoring)
+    * CLB迁移指导
+      *  [IP迁移]( /ulb/guide/migrate/ipmigrate.md )
+      *  [配置迁移]( /ulb/guide/migrate/configuremigration.md)
   * 常见问题
     * 工作原理相关
       * [会话保持是如何实现的？](/ulb/faq/session)
@@ -97,7 +100,6 @@
     * 测试相关
       * [内网报文转发的IP地址为何无法ping通？](/ulb/faq/ping)
       * [压测时为何会出现连接失败？](/ulb/faq/pressuretest)
-
 - 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
   * [2023-9-27 【CLB产品调整公告】](ulb/releasenotes/updates)
