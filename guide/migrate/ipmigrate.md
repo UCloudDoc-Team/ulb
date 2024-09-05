@@ -1,6 +1,7 @@
 # IP迁移
 
 IP迁移支持将传统型负载均衡CLB绑定的IP资源，迁移至应用型负载均衡ALB产品上，包含CLB的内外网IP和代理IP。
+IP迁移功能灰度中，请联系您的技术支持开通，或者提交[工单申请](https://console.ucloud.cn/uaccount/work_ticket/create)开通。
 
 ## 迁移注意事项
 
