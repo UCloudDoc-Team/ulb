@@ -100,6 +100,7 @@
     * 测试相关
       * [内网报文转发的IP地址为何无法ping通？](/ulb/faq/ping)
       * [压测时为何会出现连接失败？](/ulb/faq/pressuretest)
+    * [关于53端口封禁的说明](/ulb/faq/53port)
 - 产品动态
   * [新功能发布记录](ulb/releasenotes/newfunctions)
   * [2023-9-27 【CLB产品调整公告】](ulb/releasenotes/updates)
