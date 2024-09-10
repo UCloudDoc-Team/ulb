@@ -1,4 +1,6 @@
-# 使用 Toa 获取源 IP
+# 最佳实践
+
+## **使用TOA功能获取源IP**
 
 NLB 目前支持通过 Toa 获取客户端源 IP，使用 Toa 模块需要在 NLB 的 Listener 和 RealServer 主机上分别进行配置。
 
