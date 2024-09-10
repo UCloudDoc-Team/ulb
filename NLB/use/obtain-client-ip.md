@@ -18,11 +18,11 @@ NLB 目前支持通过 Toa 获取客户端源 IP，使用 Toa 模块需要在 NL
 
 2. 打开 Toa 功能，提交更新
 
-![图片注释](/images/image.png)
+![图片注释](/images/image1.png)
 
 3. 可以在此处查看 Toa 是否开启
 
-![图片注释](/images/image (2).png)
+![图片注释](/images/image2.png)
 
 ### 二、RealServer 主机安装 Toa 模块
 
@@ -71,5 +71,5 @@ watch cat /var/log/nginx/access.log
 
 如果安装成功，此处可以正确看到 client 端 IP
 
-![图片注释](/images/image (3).png)
+![图片注释](/images/image3.png)
 
