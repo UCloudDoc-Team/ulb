@@ -47,7 +47,7 @@
     * [操作日志](ulb/NLB/guide/audit-logs.md)
   * 最佳实践
     * [使用NLB挂载跨地域VPC的服务节点](ulb/NLB/use/use-instance.md)
-    * 
+    *  [使用NLB挂载跨地域VPC的服务节点](ulb/NLB/use/obtain-client-ip.md)
 - 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
