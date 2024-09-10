@@ -17,9 +17,7 @@ NLB 目前支持通过 Toa 获取客户端源 IP，使用 Toa 模块需要在 NL
 ![图片注释](/images/image.png)
 
 2. 打开 Toa 功能，提交更新
-
 ![图片注释](/images/image (1).png)
-
 3. 可以在此处查看 Toa 是否开启
 
 ![图片注释](/images/image (2).png)
