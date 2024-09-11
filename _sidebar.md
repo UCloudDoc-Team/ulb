@@ -81,6 +81,9 @@
       * [关闭日志](/ulb/guide/log/closelog)
     * 监控指标
       * [获取监控指标](/ulb/guide/ulbmonitor/getmonitoring)
+     * 数据压缩
+      *  [IP迁移]( /ulb/guide/migrate/ipmigrate.md )
+      *  [配置迁移]( /ulb/guide/migrate/configuremigration.md)
     * CLB迁移指导
       *  [IP迁移]( /ulb/guide/migrate/ipmigrate.md )
       *  [配置迁移]( /ulb/guide/migrate/configuremigration.md)
