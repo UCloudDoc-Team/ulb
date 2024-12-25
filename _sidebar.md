@@ -47,7 +47,7 @@
     * [操作日志](ulb/NLB/guide/audit-logs.md)
   * 最佳实践
     * [使用NLB挂载跨地域VPC的服务节点](ulb/NLB/use/use-instance.md)
-    * 
+    *  [使用TOA功能获取源IP](ulb/NLB/use/obtain-client-ip.md)
 - 传统型负载均衡CLB
   * 产品简介
     * [产品简介](/ulb/intro/whatisulb)
@@ -81,6 +81,8 @@
       * [关闭日志](/ulb/guide/log/closelog)
     * 监控指标
       * [获取监控指标](/ulb/guide/ulbmonitor/getmonitoring)
+     * 数据压缩
+       *  [开启数据压缩]( /ulb/guide/datacompression/opendatacompression.md )
     * CLB迁移指导
       *  [IP迁移]( /ulb/guide/migrate/ipmigrate.md )
       *  [配置迁移]( /ulb/guide/migrate/configuremigration.md)
