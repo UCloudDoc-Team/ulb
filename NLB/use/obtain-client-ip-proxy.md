@@ -72,10 +72,11 @@ sudo systemctl reload nginx
 sudo nginx -s reload
 ```
 
-## 步骤三：**验证后端服务器可获取客户端真实IP**
+## **步骤三：验证后端服务器可获取客户端真实IP**
 
 当Nginx作为后端服务节点时，您可以通过检查Nginx日志来判断是否成功获取到了客户端的真实IP地址。
 
 Nginx日志文件默认路径为：`/var/log/nginx/access.log`
 
 每行日志中，`$proxy_protocol_addr`变量对应的IP地址即为客户端真实IP地址。
+
