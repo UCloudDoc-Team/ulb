@@ -110,6 +110,9 @@
   * [2023-9-27 【CLB产品调整公告】](ulb/releasenotes/updates)
   * [2024-4-18 【ALB产品支持SNI功能】](ulb/releasenotes/alb-sni.md)
   * [2024-6-25 【ALB产品支持挂载跨域VPC云服务器】](ulb/releasenotes/alb-vpc.md)
+  * [2024-8-1 【网络型负载均衡NLB 公测上线 】](ulb/releasenotes/nlb_release.md)
+  * [2024-9-26 【传统型负载均衡CLB支持一键迁移ALB 】](ulb/releasenotes/clb7_migrate.md)
+  * [2024-12-10 【ALB产品转发规则新增动作类型 】](ulb/releasenotes/alb_forwarding_upadte.md)
 - API工具
 
   * [UAPI简介](/ulb/api/uapi)
