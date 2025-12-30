@@ -35,6 +35,7 @@
   * 产品简介
     * [产品介绍](/ulb/NLB/intro/whatisnlb)
     * [功能特性](/ulb/NLB/intro/function)
+    * [使用限制](/ulb/NLB/intro/limit)
   * 计费说明
     * [计费规则](/ulb/NLB/buy/charge)
     * [回收策略](/ulb/NLB/buy/recyle)
