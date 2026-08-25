@@ -8,7 +8,7 @@
 
 ## 原生策略
 
-在 VServer 不绑定任何安全策略的情况下，系统将使用自带的原生策略。目前系统的原生策略是：**TLS协议最低版本**为`TLSv1`，最高可能支持到`TLSv1.2`或`TLSv1.3`（受限于CLB底层使用的OpenSSL版本），**加密算法套件**为OpenSSL语法格式`ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW`。
+在 VServer 不绑定任何安全策略的情况下，系统将使用自带的原生策略。目前系统的原生策略是：**TLS协议最低版本**为`TLSv1`，最高可能支持到`TLSv1.2`或`TLSv1.3`（受限于CLB底层使用的OpenSSL版本），**加密算法套件**为OpenSSL语法格式`ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:@SECLEVEL=0`。
 
 ## 预定义策略
 
@@ -59,11 +59,11 @@
 >
 > 3、预定义策略中安全性高的策略，其支持的加密套件在CLB的环境中，等同于语法
 >
-> `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE:!RSA`
+> `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE:!RSA:@SECLEVEL=0`
 >
 > 4、预定义策略中安全性中的策略，其支持的加密套件在CLB的环境中，等同于语法
 >
-> `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE`
+> `ALL:!NULL:!aNULL:!DSS:!RC4:!RC2:!EXP:!LOW:!SSLv3:!CAMELLIA:!ARIA:!3DES:!DH:!DHE:@SECLEVEL=0`
 
 ## 自定义策略
 
